@@ -1,0 +1,365 @@
+# vim: foldmethod=marker foldlevel=0
+---
+colors: # {{{1
+  bg0: "#1d2021"
+  bg1: "#3c3836"
+  bg2: "#504945"
+  bg3: "#665c54"
+  bg4: "#7c6f64"
+  gray: "#928374"
+  fg0: "#fbf1c7"
+  fg1: "#ebdbb2"
+  fg2: "#d5c4a1"
+  fg3: "#bdae93"
+  fg4: "#a89984"
+  sign: "#282828"
+  red: "#fb4934"
+  green: "#b8bb26"
+  yellow: "#fabd2f"
+  blue: "#83a598"
+  purple: "#d3869b"
+  aqua: "#8ec07c"
+  orange: "#fe8019"
+
+highlights: # {{{1
+  Normal:
+    fg: fg1
+    bg: bg0
+  # Base colors {{{2
+  Fg0:
+    fg: fg0
+  Fg1:
+    fg: fg1
+  Fg2:
+    fg: fg2
+  Fg3:
+    fg: fg3
+  Fg4:
+    fg: fg4
+  Gray:
+    fg: gray
+  Bg0:
+    fg: bg0
+  Bg1:
+    fg: bg1
+  Bg2:
+    fg: bg2
+  Bg3:
+    fg: bg3
+  Bg4:
+    fg: bg4
+  Red:
+    fg: red
+  RedBold:
+    fg: red
+    gui: bold
+  Green:
+    fg: green
+  GreenBold:
+    fg: green
+    gui: bold
+  Yellow:
+    fg: yellow
+  YellowBold:
+    fg: yellow
+    gui: bold
+  Blue:
+    fg: blue
+  BlueBold:
+    fg: blue
+    gui: bold
+  Purple:
+    fg: purple
+  PurpleBold:
+    fg: purple
+    gui: bold
+  Aqua:
+    fg: aqua
+  AquaBold:
+    fg: aqua
+    gui: bold
+  Orange:
+    fg: orange
+  OrangeBold:
+    fg: orange
+    gui: bold
+  RedSign:
+    fg: red
+    bg: sign
+  GreenSign:
+    fg: green
+    bg: sign
+  YellowSign:
+    fg: yellow
+    bg: sign
+  BlueSign:
+    fg: blue
+    bg: sign
+  PurpleSign:
+    fg: purple
+    bg: sign
+  AquaSign:
+    fg: aqua
+    bg: sign
+
+  # Colorscheme {{{2
+
+  # Highlight Groups (`:help highlight-groups`) {{{3
+  ColorColumn:
+    bg: bg1
+  Conceal:
+    fg: blue
+    bg: NONE
+  CursorColumn:
+    link: CursorLine
+  CursorLine:
+    bg: bg2
+  CursorLineNr:
+    link: yellow
+  DiffAdd:
+    fg: green
+    bg: bg0
+    gui: inverse
+  DiffChange:
+    fg: aqua
+    bg: bg0
+    gui: inverse
+  DiffDelete:
+    fg: red
+    bg: bg0
+    gui: inverse
+  DiffText:
+    fg: yellow
+    bg: bg0
+    gui: inverse
+  Directory:
+    link: Blue
+  ErrorMsg:
+    fg: bg0
+    bg: red
+    gui: bold
+  FoldColumn:
+    fg: gray
+    bg: bg1
+  Folded:
+    fg: gray
+    bg: sign
+    gui: italic
+  IncSearch:
+    fg: orange
+    bg: bg0
+    gui: inverse
+  LineNr:
+    link: Bg4
+  MatchParen:
+    bg: bg3
+    gui: bold
+  ModeMsg:
+    link: YellowBold
+  MoreMsg:
+    link: YellowBold
+  NonText:
+    link: Bg2
+  NormalNC:
+    link: Fg3
+  Pmenu:
+    fg: fg1
+    bg: bg2
+  PmenuSbar:
+    bg: bg2
+  PmenuSel:
+    fg: bg2
+    bg: blue
+    gui: bold
+  PmenuThumb:
+    bg: bg4
+  Question:
+    link: OrangeBold
+  QuickFixLine:
+    fg: bg0
+    bg: yellow
+    gui: bold
+  Search:
+    fg: yellow
+    bg: bg0
+    gui: inverse
+  SignColumn:
+    fg: NONE
+    bg: sign
+  SpecialKey:
+    link: Fg4
+  SpellBad:
+    gui: undercurl
+    guisp: red
+  SpellCap:
+    gui: undercurl
+    guisp: blue
+  SpellLocal:
+    gui: undercurl
+    guisp: aqua
+  SpellRare:
+    gui: undercurl
+    guisp: purple
+  StatusLine:
+    fg: bg2
+    bg: fg1
+    gui: inverse
+  StatusLineNC:
+    fg: bg1
+    bg: fg4
+    gui: inverse
+  TabLine:
+    fg: bg4
+    bg: bg1
+    gui: NONE
+  TabLineFill:
+    link: TabLine
+  TabLineSel:
+    fg: green
+    bg: bg1
+    gui: bold
+  TermCursorNC:
+    link: IncSearch
+  Title:
+    link: OrangeBold
+  VertSplit:
+    link: Bg3
+  Visual:
+    bg: bg3
+    gui: inverse
+  WarningMsg:
+    link: RedBold
+  WildMenu:
+    link: PmenuSel
+
+  # Syntax (`:help group-name`) {{{3
+  Comment:
+    link: Gray
+
+  Constant:
+    link: Purple
+  String:
+    link: Green
+  Character:
+    link: Constant
+  Number:
+    link: Constant
+  Boolean:
+    link: Constant
+  Float:
+    link: Constant
+
+  Identifier:
+    link: Blue
+  Function:
+    link: Identifier
+
+  Statement:
+    link: Red
+  Conditional:
+    link: Statement
+  Repeat:
+    link: Statement
+  Label:
+    link: Statement
+  Operator:
+    link: Statement
+  Keyword:
+    link: Statement
+  Exception:
+    link: Statement
+
+  PreProc:
+    link: Aqua
+  Include:
+    link: PreProc
+  Define:
+    link: PreProc
+  Macro:
+    link: PreProc
+  PreCondit:
+    link: PreProc
+
+  Type:
+    link: Yellow
+  StorageClass:
+    link: Type
+  Structure:
+    link: Type
+  Typedef:
+    link: Type
+
+  Special:
+    link: Orange
+  SpecialChar:
+    link: Special
+  Tag:
+    link: Special
+  Delimiter:
+    link: Special
+  SpecialComment:
+    link: Special
+  Debug:
+    link: Special
+
+  Underlined:
+    fg: blue
+    gui: underline
+
+  Error:
+    fg: red
+    bg: bg
+    gui: bold,inverse
+
+  Todo:
+    fg: fg
+    bg: bg
+    gui: bold
+
+  # Plugins {{{2
+
+  # Signify {{{3
+  SignifySignAdd:
+    link: GreenSign
+  SignifySignChange:
+    link: YellowSign
+  SignifySignDelete:
+    link: RedSign
+
+  # clever-f {{{3
+  CleverFDefaultLabel:
+    fg: yellow
+    gui: bold,underline
+
+  # ALE {{{3
+  ALEError:
+    gui: undercurl
+    guisp: red
+  ALEWarning:
+    gui: undercurl
+    guisp: yellow
+  ALEInfo:
+    gui: undercurl
+    guisp: blue
+  ALEErrorSign:
+    link: RedSign
+  ALEWarningSign:
+    link: YellowSign
+  ALEInfoSign:
+    link: BlueSign
+
+  # Filetype-specific highlights {{{2
+  # diff {{{3
+  diffAdded:
+    link: Green
+  diffRemoved:
+    link: Red
+  diffFile:
+    link: Title
+  diffLine:
+    link: Blue
+  # gitcommit {{{3
+  gitCommitSummary:
+    link: Blue
+  gitCommitOverflow:
+    link: Error
