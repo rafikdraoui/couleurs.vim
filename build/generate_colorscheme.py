@@ -1,7 +1,7 @@
 from dataclasses import dataclass
-from typing import Optional
 
 import yaml
+
 
 COLORSCHEME_NAME = "couleurs"
 SOURCE_FILE = f"./build/{COLORSCHEME_NAME}.yaml"
@@ -11,21 +11,21 @@ OUTPUT_FILE = f"./colors/{COLORSCHEME_NAME}.vim"
 @dataclass
 class Highlight:
     name: str
-    link: Optional[str] = None
-    fg: Optional[str] = None
-    bg: Optional[str] = None
-    gui: Optional[str] = None
-    guisp: Optional[str] = None
+    link: str = ""
+    fg: str = ""
+    bg: str = ""
+    gui: str = ""
+    guisp: str = ""
 
 
-def parse_colorscheme_template():
+def parse_colorscheme_template() -> tuple[dict[str, str], dict[str, dict[str, str]]]:
     with open(SOURCE_FILE) as f:
         data = f.read()
     sections = yaml.safe_load(data)
     return sections["colors"], sections["highlights"]
 
 
-def make_highlight_command(colors, highlight):
+def make_highlight_command(colors: dict[str, str], highlight: Highlight) -> str:
     if highlight.link:
         return f"hi! link {highlight.name} {highlight.link}"
 
@@ -46,7 +46,7 @@ def make_highlight_command(colors, highlight):
     return " ".join(cmd)
 
 
-def write_colorscheme(highlight_cmds):
+def write_colorscheme(highlight_cmds: list[str]) -> None:
     preamble = [
         "hi clear",
         "if exists('syntax_on')",
@@ -59,7 +59,7 @@ def write_colorscheme(highlight_cmds):
             f.write(f"{line}\n")
 
 
-def main():
+def main() -> None:
     colors, highlights = parse_colorscheme_template()
     colors.update({"fg": "fg", "bg": "bg", "NONE": "NONE"})
 
