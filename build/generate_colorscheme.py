@@ -1,4 +1,3 @@
-import textwrap
 from dataclasses import dataclass
 from typing import Optional
 
@@ -48,18 +47,15 @@ def make_highlight_command(colors, highlight):
 
 
 def write_colorscheme(highlight_cmds):
+    preamble = [
+        "hi clear",
+        "if exists('syntax_on')",
+        "  syntax reset",
+        "endif",
+        f"let g:colors_name='{COLORSCHEME_NAME}'",
+    ]
     with open(OUTPUT_FILE, "w") as f:
-        header = textwrap.dedent(
-            f"""\
-        hi clear
-        if exists('syntax_on')
-          syntax reset
-        endif
-        let g:colors_name='{COLORSCHEME_NAME}'
-        """
-        )
-        f.write(header)
-        for line in highlight_cmds:
+        for line in preamble + highlight_cmds:
             f.write(f"{line}\n")
 
 
