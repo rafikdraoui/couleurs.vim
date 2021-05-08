@@ -114,7 +114,7 @@ hi Underlined guifg=#83a598 gui=underline
 hi Error guifg=#fb4934 guibg=bg gui=bold,inverse
 hi Todo guifg=fg guibg=bg gui=bold
 hi! link SignifySignAdd GreenSign
-hi! link SignifySignChange YellowSign
+hi! link SignifySignChange PurpleSign
 hi! link SignifySignDelete RedSign
 hi CleverFDefaultLabel guifg=#fabd2f gui=bold,underline
 hi ALEError gui=undercurl guisp=#fb4934

@@ -322,7 +322,7 @@ highlights: # {{{1
   SignifySignAdd:
     link: GreenSign
   SignifySignChange:
-    link: YellowSign
+    link: PurpleSign
   SignifySignDelete:
     link: RedSign
 
