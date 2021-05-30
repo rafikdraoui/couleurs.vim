@@ -15,11 +15,15 @@ groupings described in `:help group-name` as a base. From there my original
 intention was to add customizations, but after a few months of using it as is I
 never felt the need for heavy tweaking.
 
+There is also a more minimalist, less colorful color scheme named `gris`.
+
+Both color schemes have a dark and a light background variant.
+
 This is tailored to my personal needs, and is liable to change at any time, so
 it probably isn't a good idea to install this as a plugin. But it's very easy
 to use it as a template for your own color scheme! It should only be a matter
 of forking the repository, adjusting highlights in the YAML configuration, and
-running `make` to regenerate the color scheme.
+running `generate_colorschemes.py` to regenerate the color schemes.
 
 
 [gruvbox]: https://github.com/morhetz/gruvbox
