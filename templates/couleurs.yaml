@@ -121,7 +121,6 @@ FoldColumn:
 Folded:
   fg: gray
   bg: sign
-  gui: italic
 IncSearch:
   fg: orange
   bg: bg0

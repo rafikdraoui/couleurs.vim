@@ -22,7 +22,7 @@ if &background ==# 'dark'
   hi! link Directory Accent
   hi ErrorMsg guifg=#1d2021 guibg=#fb4934 gui=bold
   hi FoldColumn guifg=#928374 guibg=#3c3836
-  hi Folded guifg=#928374 guibg=#282828 gui=italic
+  hi Folded guifg=#928374 guibg=#282828
   hi IncSearch guifg=#fe8019 guibg=#1d2021 gui=inverse
   hi! link LineNr MutedBg
   hi! link MatchParen AccentBold
@@ -90,7 +90,7 @@ else
   hi! link Directory Accent
   hi ErrorMsg guifg=#f9f5d7 guibg=#920006 gui=bold
   hi FoldColumn guifg=#928374 guibg=#ebdbb2
-  hi Folded guifg=#928374 guibg=#fbf1c7 gui=italic
+  hi Folded guifg=#928374 guibg=#fbf1c7
   hi IncSearch guifg=#d65d0e guibg=#f9f5d7 gui=inverse
   hi! link LineNr MutedBg
   hi! link MatchParen AccentBold
