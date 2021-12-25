@@ -252,22 +252,35 @@ CleverFDefaultLabel:
   fg: yellow
   gui: bold,underline
 
-# ALE {{{2
-ALEError:
-  gui: undercurl
-  guisp: red
-ALEWarning:
-  gui: undercurl
-  guisp: yellow
-ALEInfo:
-  gui: undercurl
-  guisp: blue
-ALEErrorSign:
+# Diagnostic {{{2
+DiagnosticError:
+  link: Red
+DiagnosticWarn:
+  link: Yellow
+DiagnosticInfo:
+  link: Blue
+DiagnosticHint:
+  link: Blue
+DiagnosticSignError:
   link: RedSign
-ALEWarningSign:
+DiagnosticSignWarn:
   link: YellowSign
-ALEInfoSign:
+DiagnosticSignInfo:
   link: BlueSign
+DiagnosticSignHint:
+  link: BlueSign
+DiagnosticUnderlineError:
+  gui: underline
+  guisp: red
+DiagnosticUnderlineWarn:
+  gui: underline
+  guisp: yellow
+DiagnosticUnderlineInfo:
+  gui: underline
+  guisp: blue
+DiagnosticUnderlineHint:
+  gui: underline
+  guisp: blue
 
 # Filetype-specific highlights {{{1
 # diff {{{2

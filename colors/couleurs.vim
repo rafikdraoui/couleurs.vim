@@ -95,12 +95,18 @@ if &background ==# 'dark'
   hi! link GitSignsChange PurpleSign
   hi! link GitSignsDelete RedSign
   hi CleverFDefaultLabel guifg=#fabd2f gui=bold,underline
-  hi ALEError gui=undercurl guisp=#fb4934
-  hi ALEWarning gui=undercurl guisp=#fabd2f
-  hi ALEInfo gui=undercurl guisp=#83a598
-  hi! link ALEErrorSign RedSign
-  hi! link ALEWarningSign YellowSign
-  hi! link ALEInfoSign BlueSign
+  hi! link DiagnosticError Red
+  hi! link DiagnosticWarn Yellow
+  hi! link DiagnosticInfo Blue
+  hi! link DiagnosticHint Blue
+  hi! link DiagnosticSignError RedSign
+  hi! link DiagnosticSignWarn YellowSign
+  hi! link DiagnosticSignInfo BlueSign
+  hi! link DiagnosticSignHint BlueSign
+  hi DiagnosticUnderlineError gui=underline guisp=#fb4934
+  hi DiagnosticUnderlineWarn gui=underline guisp=#fabd2f
+  hi DiagnosticUnderlineInfo gui=underline guisp=#83a598
+  hi DiagnosticUnderlineHint gui=underline guisp=#83a598
   hi! link diffAdded Green
   hi! link diffRemoved Red
   hi! link diffFile Title
@@ -199,12 +205,18 @@ else
   hi! link GitSignsChange PurpleSign
   hi! link GitSignsDelete RedSign
   hi CleverFDefaultLabel guifg=#b57614 gui=bold,underline
-  hi ALEError gui=undercurl guisp=#920006
-  hi ALEWarning gui=undercurl guisp=#b57614
-  hi ALEInfo gui=undercurl guisp=#076678
-  hi! link ALEErrorSign RedSign
-  hi! link ALEWarningSign YellowSign
-  hi! link ALEInfoSign BlueSign
+  hi! link DiagnosticError Red
+  hi! link DiagnosticWarn Yellow
+  hi! link DiagnosticInfo Blue
+  hi! link DiagnosticHint Blue
+  hi! link DiagnosticSignError RedSign
+  hi! link DiagnosticSignWarn YellowSign
+  hi! link DiagnosticSignInfo BlueSign
+  hi! link DiagnosticSignHint BlueSign
+  hi DiagnosticUnderlineError gui=underline guisp=#920006
+  hi DiagnosticUnderlineWarn gui=underline guisp=#b57614
+  hi DiagnosticUnderlineInfo gui=underline guisp=#076678
+  hi DiagnosticUnderlineHint gui=underline guisp=#076678
   hi! link diffAdded Green
   hi! link diffRemoved Red
   hi! link diffFile Title
