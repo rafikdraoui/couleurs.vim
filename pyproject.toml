@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "couleurs.vim"
+version = "0.1.0"
+description = "Generate vim colorschemes from templates"
+authors = ["Rafik Draoui <rafik@rafik.ca>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyYAML = "^6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
