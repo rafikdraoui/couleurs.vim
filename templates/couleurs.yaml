@@ -239,12 +239,12 @@ Todo:
 
 # Plugins {{{1
 
-# Signify {{{2
-SignifySignAdd:
+# gitsigns.nvim {{{2
+GitSignsAdd:
   link: GreenSign
-SignifySignChange:
+GitSignsChange:
   link: PurpleSign
-SignifySignDelete:
+GitSignsDelete:
   link: RedSign
 
 # clever-f {{{2

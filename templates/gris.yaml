@@ -187,12 +187,12 @@ diffRemoved:
 gitCommitOverflow:
   link: Error
 
-SignifySignAdd:
+GitSignsAdd:
   fg: green
   bg: sign
-SignifySignChange:
+GitSignsChange:
   fg: purple
   bg: sign
-SignifySignDelete:
+GitSignsDelete:
   fg: red
   bg: sign

@@ -91,9 +91,9 @@ if &background ==# 'dark'
   hi Underlined guifg=#83a598 gui=underline
   hi Error guifg=#fb4934 guibg=#1d2021 gui=bold,inverse
   hi Todo guifg=#ebdbb2 guibg=#1d2021 gui=bold
-  hi! link SignifySignAdd GreenSign
-  hi! link SignifySignChange PurpleSign
-  hi! link SignifySignDelete RedSign
+  hi! link GitSignsAdd GreenSign
+  hi! link GitSignsChange PurpleSign
+  hi! link GitSignsDelete RedSign
   hi CleverFDefaultLabel guifg=#fabd2f gui=bold,underline
   hi ALEError gui=undercurl guisp=#fb4934
   hi ALEWarning gui=undercurl guisp=#fabd2f
@@ -195,9 +195,9 @@ else
   hi Underlined guifg=#076678 gui=underline
   hi Error guifg=#920006 guibg=#f9f5d7 gui=bold,inverse
   hi Todo guifg=#3c3836 guibg=#f9f5d7 gui=bold
-  hi! link SignifySignAdd GreenSign
-  hi! link SignifySignChange PurpleSign
-  hi! link SignifySignDelete RedSign
+  hi! link GitSignsAdd GreenSign
+  hi! link GitSignsChange PurpleSign
+  hi! link GitSignsDelete RedSign
   hi CleverFDefaultLabel guifg=#b57614 gui=bold,underline
   hi ALEError gui=undercurl guisp=#920006
   hi ALEWarning gui=undercurl guisp=#b57614

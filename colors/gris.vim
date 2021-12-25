@@ -68,9 +68,9 @@ if &background ==# 'dark'
   hi diffAdded guifg=#b8bb26 guibg=#282828
   hi diffRemoved guifg=#fb4934 guibg=#282828
   hi! link gitCommitOverflow Error
-  hi SignifySignAdd guifg=#b8bb26 guibg=#282828
-  hi SignifySignChange guifg=#d3869b guibg=#282828
-  hi SignifySignDelete guifg=#fb4934 guibg=#282828
+  hi GitSignsAdd guifg=#b8bb26 guibg=#282828
+  hi GitSignsChange guifg=#d3869b guibg=#282828
+  hi GitSignsDelete guifg=#fb4934 guibg=#282828
 else
   hi Normal guifg=#3c3836 guibg=#f9f5d7
   hi Bold guifg=#282828 gui=bold
@@ -136,7 +136,7 @@ else
   hi diffAdded guifg=#79740e guibg=#fbf1c7
   hi diffRemoved guifg=#920006 guibg=#fbf1c7
   hi! link gitCommitOverflow Error
-  hi SignifySignAdd guifg=#79740e guibg=#fbf1c7
-  hi SignifySignChange guifg=#8f3f71 guibg=#fbf1c7
-  hi SignifySignDelete guifg=#920006 guibg=#fbf1c7
+  hi GitSignsAdd guifg=#79740e guibg=#fbf1c7
+  hi GitSignsChange guifg=#8f3f71 guibg=#fbf1c7
+  hi GitSignsDelete guifg=#920006 guibg=#fbf1c7
 endif
