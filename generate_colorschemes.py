@@ -29,7 +29,7 @@ class Highlight:
 
 
 def parse_palette(path: str) -> Palette:
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         data = yaml.safe_load(f)
 
     dark, light = data["dark"], data["light"]
@@ -38,7 +38,7 @@ def parse_palette(path: str) -> Palette:
 
 
 def parse_colorscheme(path: str) -> list[Highlight]:
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         data = yaml.safe_load(f)
     return [Highlight(name, **attrs) for name, attrs in data.items()]
 
@@ -75,7 +75,7 @@ def write_colorscheme(name: str, palette: Palette, highlights: list[Highlight]) 
     dark_hl_cmds = [hl_cmd(palette.dark, hl) for hl in highlights]
     light_hl_cmds = [hl_cmd(palette.light, hl) for hl in highlights]
 
-    with open(f"colors/{name}.vim", "w") as f:
+    with open(f"colors/{name}.vim", "w", encoding="utf-8") as f:
         for line in preamble:
             f.write(f"{line}\n")
 
