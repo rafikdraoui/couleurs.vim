@@ -1,13 +1,13 @@
 from dataclasses import dataclass
 from pathlib import Path
 
-import yaml
+import tomllib
 
 
 def main() -> None:
-    palette = parse_palette(Path("templates/palette.yaml"))
+    palette = parse_palette(Path("templates/palette.toml"))
     for name in ("couleurs", "gris"):
-        highlights = parse_colorscheme(Path(f"templates/{name}.yaml"))
+        highlights = parse_colorscheme(Path(f"templates/{name}.toml"))
         write_colorscheme(name, palette, highlights)
 
 
@@ -28,8 +28,8 @@ class Highlight:
 
 
 def parse_palette(path: Path) -> Palette:
-    with path.open() as f:
-        data = yaml.safe_load(f)
+    with path.open(mode="rb") as f:
+        data = tomllib.load(f)
 
     dark, light = data["dark"], data["light"]
     dark["NONE"] = light["NONE"] = "NONE"
@@ -37,8 +37,8 @@ def parse_palette(path: Path) -> Palette:
 
 
 def parse_colorscheme(path: Path) -> list[Highlight]:
-    with path.open() as f:
-        data = yaml.safe_load(f)
+    with path.open("rb") as f:
+        data = tomllib.load(f)
     return [Highlight(name, **attrs) for name, attrs in data.items()]
 
 

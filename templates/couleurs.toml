@@ -1,0 +1,137 @@
+# vim: foldmethod=marker
+
+Normal = { fg = "fg1", bg = "bg0" }
+
+
+# Base colors {{{1
+Fg0 = { fg = "fg0" }
+Fg1 = { fg = "fg1" }
+Fg2 = { fg = "fg2" }
+Fg3 = { fg = "fg3" }
+Fg4 = { fg = "fg4" }
+Gray = { fg = "gray" }
+Bg0 = { fg = "bg0" }
+Bg1 = { fg = "bg1" }
+Bg2 = { fg = "bg2" }
+Bg3 = { fg = "bg3" }
+Bg4 = { fg = "bg4" }
+Red = { fg = "red" }
+RedBold = { fg = "red", gui = "bold" }
+Green = { fg = "green" }
+GreenBold = { fg = "green", gui = "bold" }
+Yellow = { fg = "yellow" }
+YellowBold = { fg = "yellow", gui = "bold" }
+Blue = { fg = "blue" }
+BlueBold = { fg = "blue", gui = "bold" }
+Purple = { fg = "purple" }
+PurpleBold = { fg = "purple", gui = "bold" }
+Aqua = { fg = "aqua" }
+AquaBold = { fg = "aqua", gui = "bold" }
+Orange = { fg = "orange" }
+OrangeBold = { fg = "orange", gui = "bold" }
+RedSign = { fg = "red", bg = "sign" }
+GreenSign = { fg = "green", bg = "sign" }
+YellowSign = { fg = "yellow", bg = "sign" }
+BlueSign = { fg = "blue", bg = "sign" }
+PurpleSign = { fg = "purple", bg = "sign" }
+AquaSign = { fg = "aqua", bg = "sign" }
+
+
+# Colorscheme {{{1
+
+# Highlight Groups (`:help highlight-groups`) {{{2
+ColorColumn = { bg = "bg1" }
+Conceal = { fg = "blue", bg = "NONE" }
+CursorColumn = { link = "CursorLine" }
+CursorLine = { bg = "bg2" }
+CursorLineNr = { link = "yellow" }
+DiffAdd = { fg = "green", bg = "bg0", gui = "inverse" }
+DiffChange = { fg = "aqua", bg = "bg0", gui = "inverse" }
+DiffDelete = { fg = "red", bg = "bg0", gui = "inverse" }
+DiffText = { fg = "yellow", bg = "bg0", gui = "inverse" }
+Directory = { link = "Blue" }
+ErrorMsg = { fg = "bg0", bg = "red", gui = "bold" }
+FoldColumn = { fg = "gray", bg = "bg1" }
+Folded = { fg = "gray", bg = "sign" }
+IncSearch = { fg = "orange", bg = "bg0", gui = "inverse" }
+LineNr = { link = "Bg4" }
+MatchParen = { bg = "bg3", gui = "bold" }
+ModeMsg = { link = "YellowBold" }
+MoreMsg = { link = "YellowBold" }
+NonText = { link = "Bg2" }
+NormalNC = { link = "Fg3" }
+Pmenu = { fg = "fg1", bg = "bg2" }
+PmenuSbar = { bg = "bg2" }
+PmenuSel = { fg = "bg2", bg = "blue", gui = "bold" }
+PmenuThumb = { bg = "bg4" }
+Question = { link = "OrangeBold" }
+QuickFixLine = { fg = "bg0", bg = "yellow", gui = "bold" }
+Search = { fg = "yellow", bg = "bg0", gui = "inverse" }
+SignColumn = { fg = "NONE", bg = "sign" }
+SpecialKey = { link = "Fg4" }
+SpellBad = { gui = "undercurl", guisp = "red" }
+SpellCap = { gui = "undercurl", guisp = "blue" }
+SpellLocal = { gui = "undercurl", guisp = "aqua" }
+SpellRare = { gui = "undercurl", guisp = "purple" }
+StatusLine = { fg = "bg2", bg = "fg1", gui = "inverse" }
+StatusLineNC = { fg = "bg1", bg = "fg4", gui = "inverse" }
+TabLine = { fg = "bg4", bg = "bg1", gui = "NONE" }
+TabLineFill = { link = "TabLine" }
+TabLineSel = { fg = "green", bg = "bg1", gui = "bold" }
+TermCursorNC = { link = "IncSearch" }
+Title = { link = "OrangeBold" }
+Visual = { bg = "bg3", gui = "inverse" }
+WarningMsg = { link = "RedBold" }
+WildMenu = { link = "PmenuSel" }
+WinSeparator = { link = "Bg3" }
+
+# Syntax (`:help group-name`) {{{2
+Comment = { link = "Gray" }
+Constant = { link = "Purple" }
+String = { link = "Green" }
+Identifier = { link = "Blue" }
+Statement = { link = "Red" }
+PreProc = { link = "Aqua" }
+Type = { link = "Yellow" }
+Special = { link = "Orange" }
+Underlined = { fg = "blue", gui = "underline" }
+Error = { fg = "red", bg = "bg0", gui = "bold,inverse" }
+Todo = { fg = "fg1", bg = "bg0", gui = "bold" }
+
+
+# Plugins {{{1
+
+# gitsigns.nvim {{{2
+GitSignsAdd = { link = "GreenSign" }
+GitSignsChange = { link = "PurpleSign" }
+GitSignsDelete = { link = "RedSign" }
+
+# clever-f {{{2
+CleverFDefaultLabel = { fg = "yellow", gui = "bold,underline" }
+
+# Diagnostic {{{2
+DiagnosticError = { link = "Red" }
+DiagnosticWarn = { link = "Yellow" }
+DiagnosticInfo = { link = "Blue" }
+DiagnosticHint = { link = "Blue" }
+DiagnosticSignError = { link = "RedSign" }
+DiagnosticSignWarn = { link = "YellowSign" }
+DiagnosticSignInfo = { link = "BlueSign" }
+DiagnosticSignHint = { link = "BlueSign" }
+DiagnosticUnderlineError = { gui = "underline", guisp = "red" }
+DiagnosticUnderlineWarn = { gui = "underline", guisp = "yellow" }
+DiagnosticUnderlineInfo = { gui = "underline", guisp = "blue" }
+DiagnosticUnderlineHint = { gui = "underline", guisp = "blue" }
+
+
+# Filetype-specific highlights {{{1
+
+# diff {{{2
+diffAdded = { link = "Green" }
+diffRemoved = { link = "Red" }
+diffFile = { link = "Title" }
+diffLine = { link = "Blue" }
+
+# gitcommit {{{2
+gitCommitSummary = { link = "Blue" }
+gitCommitOverflow = { link = "Error" }

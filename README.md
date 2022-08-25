@@ -22,9 +22,8 @@ Both color schemes have a dark and a light background variant.
 This is tailored to my personal needs, and is liable to change at any time, so
 it probably isn't a good idea to install this as a plugin. But it's very easy
 to use it as a template for your own color scheme! It should only be a matter
-of forking the repository, adjusting highlights in the YAML configuration, and
+of forking the repository, adjusting highlights in the TOML configuration, and
 running `generate_colorschemes.py` to regenerate the color schemes.
-
 
 [gruvbox]: https://github.com/morhetz/gruvbox
 [gruvbox-custom]: https://github.com/rafikdraoui/gruvbox-custom
