@@ -1,12 +1,13 @@
 from dataclasses import dataclass
+from pathlib import Path
 
 import yaml
 
 
 def main() -> None:
-    palette = parse_palette("templates/palette.yaml")
+    palette = parse_palette(Path("templates/palette.yaml"))
     for name in ("couleurs", "gris"):
-        highlights = parse_colorscheme(f"templates/{name}.yaml")
+        highlights = parse_colorscheme(Path(f"templates/{name}.yaml"))
         write_colorscheme(name, palette, highlights)
 
 
@@ -26,8 +27,8 @@ class Highlight:
     guisp: str = ""
 
 
-def parse_palette(path: str) -> Palette:
-    with open(path, encoding="utf-8") as f:
+def parse_palette(path: Path) -> Palette:
+    with path.open() as f:
         data = yaml.safe_load(f)
 
     dark, light = data["dark"], data["light"]
@@ -35,8 +36,8 @@ def parse_palette(path: str) -> Palette:
     return Palette(dark=dark, light=light)
 
 
-def parse_colorscheme(path: str) -> list[Highlight]:
-    with open(path, encoding="utf-8") as f:
+def parse_colorscheme(path: Path) -> list[Highlight]:
+    with path.open() as f:
         data = yaml.safe_load(f)
     return [Highlight(name, **attrs) for name, attrs in data.items()]
 
