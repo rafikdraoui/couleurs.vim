@@ -76,10 +76,10 @@ if &background ==# 'dark'
   hi TabLineSel guifg=#b8bb26 guibg=#3c3836 gui=bold
   hi! link TermCursorNC IncSearch
   hi! link Title OrangeBold
-  hi! link VertSplit Bg3
   hi Visual guibg=#665c54 gui=inverse
   hi! link WarningMsg RedBold
   hi! link WildMenu PmenuSel
+  hi! link WinSeparator Bg3
   hi! link Comment Gray
   hi! link Constant Purple
   hi! link String Green
@@ -186,10 +186,10 @@ else
   hi TabLineSel guifg=#79740e guibg=#ebdbb2 gui=bold
   hi! link TermCursorNC IncSearch
   hi! link Title OrangeBold
-  hi! link VertSplit Bg3
   hi Visual guibg=#bdae93 gui=inverse
   hi! link WarningMsg RedBold
   hi! link WildMenu PmenuSel
+  hi! link WinSeparator Bg3
   hi! link Comment Gray
   hi! link Constant Purple
   hi! link String Green

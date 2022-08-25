@@ -138,8 +138,6 @@ TermCursorNC:
   link: IncSearch
 Title:
   link: AccentBold
-VertSplit:
-  link: Pale
 Visual:
   bg: bg3
   gui: inverse
@@ -148,6 +146,8 @@ WarningMsg:
   gui: bold
 WildMenu:
   link: PmenuSel
+WinSeparator:
+  link: MutedBg
 
 # Syntax (`:help group-name`) {{{2
 Comment:

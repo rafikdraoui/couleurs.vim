@@ -198,8 +198,6 @@ TermCursorNC:
   link: IncSearch
 Title:
   link: OrangeBold
-VertSplit:
-  link: Bg3
 Visual:
   bg: bg3
   gui: inverse
@@ -207,6 +205,8 @@ WarningMsg:
   link: RedBold
 WildMenu:
   link: PmenuSel
+WinSeparator:
+  link: Bg3
 
 # Syntax (`:help group-name`) {{{2
 Comment:

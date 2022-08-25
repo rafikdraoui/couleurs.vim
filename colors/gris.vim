@@ -50,10 +50,10 @@ if &background ==# 'dark'
   hi TabLineSel guifg=#d3869b guibg=#3c3836 gui=bold
   hi! link TermCursorNC IncSearch
   hi! link Title AccentBold
-  hi! link VertSplit Pale
   hi Visual guibg=#665c54 gui=inverse
   hi WarningMsg guifg=#fb4934 gui=bold
   hi! link WildMenu PmenuSel
+  hi! link WinSeparator MutedBg
   hi Comment guifg=#928374
   hi! link Constant Normal
   hi String guifg=#83a598
@@ -118,10 +118,10 @@ else
   hi TabLineSel guifg=#8f3f71 guibg=#ebdbb2 gui=bold
   hi! link TermCursorNC IncSearch
   hi! link Title AccentBold
-  hi! link VertSplit Pale
   hi Visual guibg=#bdae93 gui=inverse
   hi WarningMsg guifg=#920006 gui=bold
   hi! link WildMenu PmenuSel
+  hi! link WinSeparator MutedBg
   hi Comment guifg=#928374
   hi! link Constant Normal
   hi String guifg=#076678
