@@ -98,6 +98,10 @@ Underlined = { fg = "blue", gui = "underline" }
 Error = { fg = "red", bg = "bg0", gui = "bold,inverse" }
 Todo = { fg = "fg1", bg = "bg0", gui = "bold" }
 
+# Extra tree-sitter highlights  {{{2
+"@text.diff.add" = { link = "Green" }
+"@text.diff.delete" = { link = "Red" }
+
 
 # Plugins {{{1
 
@@ -126,12 +130,9 @@ DiagnosticUnderlineHint = { gui = "underline", guisp = "blue" }
 
 # Filetype-specific highlights {{{1
 
-# diff {{{2
+# gitcommit {{{2
 diffAdded = { link = "Green" }
 diffRemoved = { link = "Red" }
-diffFile = { link = "Title" }
 diffLine = { link = "Blue" }
-
-# gitcommit {{{2
 gitCommitSummary = { link = "Blue" }
 gitCommitOverflow = { link = "Error" }

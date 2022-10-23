@@ -69,11 +69,13 @@ Underlined = { fg = "fg1", gui = "underline" }
 Error = { fg = "red", bg = "bg0", gui = "bold,inverse" }
 Todo = { link = "AccentBold" }
 
+# Extra tree-sitter highlights  {{{2
+"@text.diff.add" = { fg = "green" }
+"@text.diff.delete" = { fg = "red" }
 
 # git/diff highlights {{{1
-diffAdded = { fg = "green", bg = "sign" }
-diffRemoved = { fg = "red", bg = "sign" }
-
+diffAdded = { fg = "green" }
+diffRemoved = { fg = "red" }
 gitCommitOverflow = { link = "Error" }
 
 GitSignsAdd = { fg = "green", bg = "sign" }

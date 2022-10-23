@@ -65,8 +65,10 @@ if &background ==# 'dark'
   hi Underlined guifg=#ebdbb2 gui=underline
   hi Error guifg=#fb4934 guibg=#1d2021 gui=bold,inverse
   hi! link Todo AccentBold
-  hi diffAdded guifg=#b8bb26 guibg=#282828
-  hi diffRemoved guifg=#fb4934 guibg=#282828
+  hi @text.diff.add guifg=#b8bb26
+  hi @text.diff.delete guifg=#fb4934
+  hi diffAdded guifg=#b8bb26
+  hi diffRemoved guifg=#fb4934
   hi! link gitCommitOverflow Error
   hi GitSignsAdd guifg=#b8bb26 guibg=#282828
   hi GitSignsChange guifg=#d3869b guibg=#282828
@@ -133,8 +135,10 @@ else
   hi Underlined guifg=#3c3836 gui=underline
   hi Error guifg=#920006 guibg=#f9f5d7 gui=bold,inverse
   hi! link Todo AccentBold
-  hi diffAdded guifg=#79740e guibg=#fbf1c7
-  hi diffRemoved guifg=#920006 guibg=#fbf1c7
+  hi @text.diff.add guifg=#79740e
+  hi @text.diff.delete guifg=#920006
+  hi diffAdded guifg=#79740e
+  hi diffRemoved guifg=#920006
   hi! link gitCommitOverflow Error
   hi GitSignsAdd guifg=#79740e guibg=#fbf1c7
   hi GitSignsChange guifg=#8f3f71 guibg=#fbf1c7
