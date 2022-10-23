@@ -99,6 +99,7 @@ Error = { fg = "red", bg = "bg0", gui = "bold,inverse" }
 Todo = { fg = "fg1", bg = "bg0", gui = "bold" }
 
 # Extra tree-sitter highlights  {{{2
+"@text.danger" = { link = "ErrorMsg" }
 "@text.diff.add" = { link = "Green" }
 "@text.diff.delete" = { link = "Red" }
 
