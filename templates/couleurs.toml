@@ -98,6 +98,20 @@ Underlined = { fg = "blue", gui = "underline" }
 Error = { fg = "red", bg = "bg0", gui = "bold,inverse" }
 Todo = { fg = "fg1", bg = "bg0", gui = "bold" }
 
+# Diagnostic (`:help diagnostic-highlights`) {{{2
+DiagnosticError = { link = "Red" }
+DiagnosticWarn = { link = "Yellow" }
+DiagnosticInfo = { link = "Blue" }
+DiagnosticHint = { link = "Blue" }
+DiagnosticSignError = { link = "RedSign" }
+DiagnosticSignWarn = { link = "YellowSign" }
+DiagnosticSignInfo = { link = "BlueSign" }
+DiagnosticSignHint = { link = "BlueSign" }
+DiagnosticUnderlineError = { gui = "underline", guisp = "red" }
+DiagnosticUnderlineWarn = { gui = "underline", guisp = "yellow" }
+DiagnosticUnderlineInfo = { gui = "underline", guisp = "blue" }
+DiagnosticUnderlineHint = { gui = "underline", guisp = "blue" }
+
 # Extra tree-sitter highlights  {{{2
 "@text.danger" = { link = "ErrorMsg" }
 "@text.diff.add" = { link = "Green" }
@@ -113,20 +127,6 @@ GitSignsDelete = { link = "RedSign" }
 
 # mini.jump {{{2
 MiniJump = { fg = "yellow", gui = "bold,underline" }
-
-# Diagnostic {{{2
-DiagnosticError = { link = "Red" }
-DiagnosticWarn = { link = "Yellow" }
-DiagnosticInfo = { link = "Blue" }
-DiagnosticHint = { link = "Blue" }
-DiagnosticSignError = { link = "RedSign" }
-DiagnosticSignWarn = { link = "YellowSign" }
-DiagnosticSignInfo = { link = "BlueSign" }
-DiagnosticSignHint = { link = "BlueSign" }
-DiagnosticUnderlineError = { gui = "underline", guisp = "red" }
-DiagnosticUnderlineWarn = { gui = "underline", guisp = "yellow" }
-DiagnosticUnderlineInfo = { gui = "underline", guisp = "blue" }
-DiagnosticUnderlineHint = { gui = "underline", guisp = "blue" }
 
 
 # Filetype-specific highlights {{{1

@@ -91,13 +91,6 @@ if &background ==# 'dark'
   hi Underlined guifg=#83a598 gui=underline
   hi Error guifg=#fb4934 guibg=#1d2021 gui=bold,inverse
   hi Todo guifg=#ebdbb2 guibg=#1d2021 gui=bold
-  hi! link @text.danger ErrorMsg
-  hi! link @text.diff.add Green
-  hi! link @text.diff.delete Red
-  hi! link GitSignsAdd GreenSign
-  hi! link GitSignsChange PurpleSign
-  hi! link GitSignsDelete RedSign
-  hi MiniJump guifg=#fabd2f gui=bold,underline
   hi! link DiagnosticError Red
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
@@ -110,6 +103,13 @@ if &background ==# 'dark'
   hi DiagnosticUnderlineWarn gui=underline guisp=#fabd2f
   hi DiagnosticUnderlineInfo gui=underline guisp=#83a598
   hi DiagnosticUnderlineHint gui=underline guisp=#83a598
+  hi! link @text.danger ErrorMsg
+  hi! link @text.diff.add Green
+  hi! link @text.diff.delete Red
+  hi! link GitSignsAdd GreenSign
+  hi! link GitSignsChange PurpleSign
+  hi! link GitSignsDelete RedSign
+  hi MiniJump guifg=#fabd2f gui=bold,underline
   hi! link diffAdded Green
   hi! link diffRemoved Red
   hi! link diffLine Blue
@@ -203,13 +203,6 @@ else
   hi Underlined guifg=#076678 gui=underline
   hi Error guifg=#920006 guibg=#f9f5d7 gui=bold,inverse
   hi Todo guifg=#3c3836 guibg=#f9f5d7 gui=bold
-  hi! link @text.danger ErrorMsg
-  hi! link @text.diff.add Green
-  hi! link @text.diff.delete Red
-  hi! link GitSignsAdd GreenSign
-  hi! link GitSignsChange PurpleSign
-  hi! link GitSignsDelete RedSign
-  hi MiniJump guifg=#b57614 gui=bold,underline
   hi! link DiagnosticError Red
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
@@ -222,6 +215,13 @@ else
   hi DiagnosticUnderlineWarn gui=underline guisp=#b57614
   hi DiagnosticUnderlineInfo gui=underline guisp=#076678
   hi DiagnosticUnderlineHint gui=underline guisp=#076678
+  hi! link @text.danger ErrorMsg
+  hi! link @text.diff.add Green
+  hi! link @text.diff.delete Red
+  hi! link GitSignsAdd GreenSign
+  hi! link GitSignsChange PurpleSign
+  hi! link GitSignsDelete RedSign
+  hi MiniJump guifg=#b57614 gui=bold,underline
   hi! link diffAdded Green
   hi! link diffRemoved Red
   hi! link diffLine Blue
