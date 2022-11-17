@@ -111,8 +111,8 @@ GitSignsAdd = { link = "GreenSign" }
 GitSignsChange = { link = "PurpleSign" }
 GitSignsDelete = { link = "RedSign" }
 
-# clever-f {{{2
-CleverFDefaultLabel = { fg = "yellow", gui = "bold,underline" }
+# mini.jump {{{2
+MiniJump = { fg = "yellow", gui = "bold,underline" }
 
 # Diagnostic {{{2
 DiagnosticError = { link = "Red" }

@@ -97,7 +97,7 @@ if &background ==# 'dark'
   hi! link GitSignsAdd GreenSign
   hi! link GitSignsChange PurpleSign
   hi! link GitSignsDelete RedSign
-  hi CleverFDefaultLabel guifg=#fabd2f gui=bold,underline
+  hi MiniJump guifg=#fabd2f gui=bold,underline
   hi! link DiagnosticError Red
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
@@ -209,7 +209,7 @@ else
   hi! link GitSignsAdd GreenSign
   hi! link GitSignsChange PurpleSign
   hi! link GitSignsDelete RedSign
-  hi CleverFDefaultLabel guifg=#b57614 gui=bold,underline
+  hi MiniJump guifg=#b57614 gui=bold,underline
   hi! link DiagnosticError Red
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
