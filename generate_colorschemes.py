@@ -46,21 +46,18 @@ def hl_cmd(colors: dict[str, str], hl: Highlight) -> str:
     if hl.link:
         return f"hi! link {hl.name} {hl.link}"
 
-    fg = colors.get(hl.fg)
-    bg = colors.get(hl.bg)
-    gui = hl.gui
-    guisp = colors.get(hl.guisp)
+    attrs = {
+        "guifg": colors.get(hl.fg),
+        "guibg": colors.get(hl.bg),
+        "gui": hl.gui,
+        "guisp": colors.get(hl.guisp),
+    }
 
-    cmd = [f"hi {hl.name}"]
-    if fg:
-        cmd.append(f"guifg={fg}")
-    if bg:
-        cmd.append(f"guibg={bg}")
-    if gui:
-        cmd.append(f"gui={gui}")
-    if guisp:
-        cmd.append(f"guisp={guisp}")
-    return " ".join(cmd)
+    cmd = f"hi {hl.name}"
+    for k, v in attrs.items():
+        if v:
+            cmd += f" {k}={v}"
+    return cmd
 
 
 def write_colorscheme(name: str, palette: Palette, highlights: list[Highlight]) -> None:
