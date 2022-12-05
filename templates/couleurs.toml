@@ -102,15 +102,15 @@ Todo = { fg = "fg1", bg = "bg0", gui = "bold" }
 DiagnosticError = { link = "Red" }
 DiagnosticWarn = { link = "Yellow" }
 DiagnosticInfo = { link = "Blue" }
-DiagnosticHint = { link = "Gray" }
+DiagnosticHint = { link = "Fg3" }
 DiagnosticSignError = { link = "RedSign" }
 DiagnosticSignWarn = { link = "YellowSign" }
 DiagnosticSignInfo = { link = "BlueSign" }
-DiagnosticSignHint = { fg = "gray", bg = "sign" }
+DiagnosticSignHint = { fg = "fg3", bg = "sign" }
 DiagnosticUnderlineError = { gui = "underline", guisp = "red" }
 DiagnosticUnderlineWarn = { gui = "underline", guisp = "yellow" }
 DiagnosticUnderlineInfo = { gui = "underline", guisp = "blue" }
-DiagnosticUnderlineHint = { gui = "underline", guisp = "gray" }
+DiagnosticUnderlineHint = { gui = "underline", guisp = "fg3" }
 
 # Extra tree-sitter highlights  {{{2
 "@text.danger" = { link = "ErrorMsg" }

@@ -94,15 +94,15 @@ if &background ==# 'dark'
   hi! link DiagnosticError Red
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
-  hi! link DiagnosticHint Gray
+  hi! link DiagnosticHint Fg3
   hi! link DiagnosticSignError RedSign
   hi! link DiagnosticSignWarn YellowSign
   hi! link DiagnosticSignInfo BlueSign
-  hi DiagnosticSignHint guifg=#928374 guibg=#282828
+  hi DiagnosticSignHint guifg=#bdae93 guibg=#282828
   hi DiagnosticUnderlineError gui=underline guisp=#fb4934
   hi DiagnosticUnderlineWarn gui=underline guisp=#fabd2f
   hi DiagnosticUnderlineInfo gui=underline guisp=#83a598
-  hi DiagnosticUnderlineHint gui=underline guisp=#928374
+  hi DiagnosticUnderlineHint gui=underline guisp=#bdae93
   hi! link @text.danger ErrorMsg
   hi! link @text.diff.add Green
   hi! link @text.diff.delete Red
@@ -206,15 +206,15 @@ else
   hi! link DiagnosticError Red
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
-  hi! link DiagnosticHint Gray
+  hi! link DiagnosticHint Fg3
   hi! link DiagnosticSignError RedSign
   hi! link DiagnosticSignWarn YellowSign
   hi! link DiagnosticSignInfo BlueSign
-  hi DiagnosticSignHint guifg=#928374 guibg=#fbf1c7
+  hi DiagnosticSignHint guifg=#665c54 guibg=#fbf1c7
   hi DiagnosticUnderlineError gui=underline guisp=#920006
   hi DiagnosticUnderlineWarn gui=underline guisp=#b57614
   hi DiagnosticUnderlineInfo gui=underline guisp=#076678
-  hi DiagnosticUnderlineHint gui=underline guisp=#928374
+  hi DiagnosticUnderlineHint gui=underline guisp=#665c54
   hi! link @text.danger ErrorMsg
   hi! link @text.diff.add Green
   hi! link @text.diff.delete Red
