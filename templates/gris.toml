@@ -72,6 +72,7 @@ Todo = { link = "AccentBold" }
 # Extra tree-sitter highlights  {{{2
 "@text.diff.add" = { fg = "green" }
 "@text.diff.delete" = { fg = "red" }
+"@text.uri.comment" = { fg = "gray", gui = "underline" }
 
 # git/diff highlights {{{1
 diffAdded = { fg = "green" }

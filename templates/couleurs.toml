@@ -116,6 +116,7 @@ DiagnosticUnderlineHint = { gui = "underline", guisp = "fg3" }
 "@text.danger" = { link = "ErrorMsg" }
 "@text.diff.add" = { link = "Green" }
 "@text.diff.delete" = { link = "Red" }
+"@text.uri.comment" = { fg = "gray", gui = "underline" }
 
 
 # Plugins {{{1

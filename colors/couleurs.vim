@@ -106,6 +106,7 @@ if &background ==# 'dark'
   hi! link @text.danger ErrorMsg
   hi! link @text.diff.add Green
   hi! link @text.diff.delete Red
+  hi @text.uri.comment guifg=#928374 gui=underline
   hi! link GitSignsAdd GreenSign
   hi! link GitSignsChange PurpleSign
   hi! link GitSignsDelete RedSign
@@ -218,6 +219,7 @@ else
   hi! link @text.danger ErrorMsg
   hi! link @text.diff.add Green
   hi! link @text.diff.delete Red
+  hi @text.uri.comment guifg=#928374 gui=underline
   hi! link GitSignsAdd GreenSign
   hi! link GitSignsChange PurpleSign
   hi! link GitSignsDelete RedSign

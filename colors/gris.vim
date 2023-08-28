@@ -67,6 +67,7 @@ if &background ==# 'dark'
   hi! link Todo AccentBold
   hi @text.diff.add guifg=#b8bb26
   hi @text.diff.delete guifg=#fb4934
+  hi @text.uri.comment guifg=#928374 gui=underline
   hi diffAdded guifg=#b8bb26
   hi diffRemoved guifg=#fb4934
   hi! link gitCommitOverflow Error
@@ -137,6 +138,7 @@ else
   hi! link Todo AccentBold
   hi @text.diff.add guifg=#79740e
   hi @text.diff.delete guifg=#920006
+  hi @text.uri.comment guifg=#928374 gui=underline
   hi diffAdded guifg=#79740e
   hi diffRemoved guifg=#920006
   hi! link gitCommitOverflow Error
