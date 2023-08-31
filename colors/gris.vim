@@ -6,8 +6,8 @@ let g:colors_name='gris'
 if &background ==# 'dark'
   hi Normal guifg=#ebdbb2 guibg=#1d2021
   hi Bold guifg=#fbf1c7 gui=bold
-  hi Accent guifg=#d3869b
-  hi AccentBold guifg=#d3869b gui=bold
+  hi Accent guifg=#8ec07c
+  hi AccentBold guifg=#8ec07c gui=bold
   hi MutedFg guifg=#a89984
   hi MutedBg guifg=#7c6f64
   hi ColorColumn guibg=#3c3836
@@ -32,11 +32,11 @@ if &background ==# 'dark'
   hi! link NormalNC MutedFg
   hi Pmenu guifg=#ebdbb2 guibg=#504945
   hi PmenuSbar guibg=#504945
-  hi PmenuSel guifg=#504945 guibg=#d3869b gui=bold
+  hi PmenuSel guifg=#504945 guibg=#8ec07c gui=bold
   hi PmenuThumb guibg=#7c6f64
   hi! link Question AccentBold
-  hi QuickFixLine guifg=#1d2021 guibg=#d3869b gui=bold
-  hi Search guifg=#d3869b guibg=#1d2021 gui=inverse
+  hi QuickFixLine guifg=#1d2021 guibg=#8ec07c gui=bold
+  hi Search guifg=#8ec07c guibg=#1d2021 gui=inverse
   hi SignColumn guifg=NONE guibg=#282828
   hi! link SpecialKey MutedFg
   hi SpellBad gui=undercurl guisp=#fb4934
@@ -47,7 +47,7 @@ if &background ==# 'dark'
   hi StatusLineNC guifg=#3c3836 guibg=#a89984 gui=inverse
   hi TabLine guifg=#7c6f64 guibg=#3c3836 gui=NONE
   hi! link TabLineFill TabLine
-  hi TabLineSel guifg=#d3869b guibg=#3c3836 gui=bold
+  hi TabLineSel guifg=#8ec07c guibg=#3c3836 gui=bold
   hi! link TermCursorNC IncSearch
   hi! link Title AccentBold
   hi Visual guibg=#665c54 gui=inverse
@@ -77,8 +77,8 @@ if &background ==# 'dark'
 else
   hi Normal guifg=#3c3836 guibg=#f9f5d7
   hi Bold guifg=#282828 gui=bold
-  hi Accent guifg=#8f3f71
-  hi AccentBold guifg=#8f3f71 gui=bold
+  hi Accent guifg=#427b58
+  hi AccentBold guifg=#427b58 gui=bold
   hi MutedFg guifg=#7c6f64
   hi MutedBg guifg=#a89984
   hi ColorColumn guibg=#ebdbb2
@@ -103,11 +103,11 @@ else
   hi! link NormalNC MutedFg
   hi Pmenu guifg=#3c3836 guibg=#d5c4a1
   hi PmenuSbar guibg=#d5c4a1
-  hi PmenuSel guifg=#d5c4a1 guibg=#8f3f71 gui=bold
+  hi PmenuSel guifg=#d5c4a1 guibg=#427b58 gui=bold
   hi PmenuThumb guibg=#a89984
   hi! link Question AccentBold
-  hi QuickFixLine guifg=#f9f5d7 guibg=#8f3f71 gui=bold
-  hi Search guifg=#8f3f71 guibg=#f9f5d7 gui=inverse
+  hi QuickFixLine guifg=#f9f5d7 guibg=#427b58 gui=bold
+  hi Search guifg=#427b58 guibg=#f9f5d7 gui=inverse
   hi SignColumn guifg=NONE guibg=#fbf1c7
   hi! link SpecialKey MutedFg
   hi SpellBad gui=undercurl guisp=#920006
@@ -118,7 +118,7 @@ else
   hi StatusLineNC guifg=#ebdbb2 guibg=#7c6f64 gui=inverse
   hi TabLine guifg=#a89984 guibg=#ebdbb2 gui=NONE
   hi! link TabLineFill TabLine
-  hi TabLineSel guifg=#8f3f71 guibg=#ebdbb2 gui=bold
+  hi TabLineSel guifg=#427b58 guibg=#ebdbb2 gui=bold
   hi! link TermCursorNC IncSearch
   hi! link Title AccentBold
   hi Visual guibg=#bdae93 gui=inverse

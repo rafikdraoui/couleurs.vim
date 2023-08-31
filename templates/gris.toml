@@ -2,8 +2,8 @@
 
 Normal = { fg = "fg1", bg = "bg0" }
 Bold = { fg = "fg0", gui = "bold" }
-Accent = { fg = "purple" }
-AccentBold = { fg = "purple", gui = "bold" }
+Accent = { fg = "aqua" }
+AccentBold = { fg = "aqua", gui = "bold" }
 MutedFg = { fg = "fg4" }
 MutedBg = { fg = "bg4" }
 
@@ -33,11 +33,11 @@ NonText = { link = "MutedBg" }
 NormalNC = { link = "MutedFg" }
 Pmenu = { fg = "fg1", bg = "bg2" }
 PmenuSbar = { bg = "bg2" }
-PmenuSel = { fg = "bg2", bg = "purple", gui = "bold" }
+PmenuSel = { fg = "bg2", bg = "aqua", gui = "bold" }
 PmenuThumb = { bg = "bg4" }
 Question = { link = "AccentBold" }
-QuickFixLine = { fg = "bg0", bg = "purple", gui = "bold" }
-Search = { fg = "purple", bg = "bg0", gui = "inverse" }
+QuickFixLine = { fg = "bg0", bg = "aqua", gui = "bold" }
+Search = { fg = "aqua", bg = "bg0", gui = "inverse" }
 SignColumn = { fg = "NONE", bg = "sign" }
 SpecialKey = { link = "MutedFg" }
 SpellBad = { gui = "undercurl", guisp = "red" }
@@ -48,7 +48,7 @@ StatusLine = { fg = "bg2", bg = "fg1", gui = "inverse" }
 StatusLineNC = { fg = "bg1", bg = "fg4", gui = "inverse" }
 TabLine = { fg = "bg4", bg = "bg1", gui = "NONE" }
 TabLineFill = { link = "TabLine" }
-TabLineSel = { fg = "purple", bg = "bg1", gui = "bold" }
+TabLineSel = { fg = "aqua", bg = "bg1", gui = "bold" }
 TermCursorNC = { link = "IncSearch" }
 Title = { link = "AccentBold" }
 Visual = { bg = "bg3", gui = "inverse" }
