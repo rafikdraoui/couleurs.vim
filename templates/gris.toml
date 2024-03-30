@@ -17,7 +17,7 @@ CursorColumn = { link = "CursorLine" }
 CursorLine = { bg = "bg2" }
 CursorLineNr = { link = "Accent" }
 DiffAdd = { fg = "green", bg = "bg0", gui = "inverse" }
-DiffChange = { fg = "aqua", bg = "bg0", gui = "inverse" }
+DiffChange = { fg = "purple", bg = "bg0", gui = "inverse" }
 DiffDelete = { fg = "red", bg = "bg0", gui = "inverse" }
 DiffText = { fg = "yellow", bg = "bg0", gui = "inverse" }
 Directory = { link = "Accent" }
@@ -79,6 +79,6 @@ diffAdded = { fg = "green" }
 diffRemoved = { fg = "red" }
 gitCommitOverflow = { link = "Error" }
 
-GitSignsAdd = { fg = "green", bg = "sign" }
-GitSignsChange = { fg = "purple", bg = "sign" }
-GitSignsDelete = { fg = "red", bg = "sign" }
+MiniDiffSignAdd = { fg = "green", bg = "sign" }
+MiniDiffSignChange = { fg = "purple", bg = "sign" }
+MiniDiffSignDelete = { fg = "red", bg = "sign" }

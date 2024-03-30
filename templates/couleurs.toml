@@ -46,7 +46,7 @@ CursorColumn = { link = "CursorLine" }
 CursorLine = { bg = "bg2" }
 CursorLineNr = { link = "yellow" }
 DiffAdd = { fg = "green", bg = "bg0", gui = "inverse" }
-DiffChange = { fg = "aqua", bg = "bg0", gui = "inverse" }
+DiffChange = { fg = "purple", bg = "bg0", gui = "inverse" }
 DiffDelete = { fg = "red", bg = "bg0", gui = "inverse" }
 DiffText = { fg = "yellow", bg = "bg0", gui = "inverse" }
 Directory = { link = "Blue" }
@@ -121,12 +121,10 @@ DiagnosticUnderlineHint = { gui = "underline", guisp = "fg3" }
 
 # Plugins {{{1
 
-# gitsigns.nvim {{{2
-GitSignsAdd = { link = "GreenSign" }
-GitSignsChange = { link = "PurpleSign" }
-GitSignsDelete = { link = "RedSign" }
-
-# mini.jump {{{2
+# mini {{{2
+MiniDiffSignAdd = { link = "GreenSign" }
+MiniDiffSignChange = { link = "PurpleSign" }
+MiniDiffSignDelete = { link = "RedSign" }
 MiniJump = { fg = "yellow", gui = "bold,underline" }
 
 

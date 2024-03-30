@@ -42,7 +42,7 @@ if &background ==# 'dark'
   hi CursorLine guibg=#504945
   hi! link CursorLineNr yellow
   hi DiffAdd guifg=#b8bb26 guibg=#1d2021 gui=inverse
-  hi DiffChange guifg=#8ec07c guibg=#1d2021 gui=inverse
+  hi DiffChange guifg=#d3869b guibg=#1d2021 gui=inverse
   hi DiffDelete guifg=#fb4934 guibg=#1d2021 gui=inverse
   hi DiffText guifg=#fabd2f guibg=#1d2021 gui=inverse
   hi! link Directory Blue
@@ -107,9 +107,9 @@ if &background ==# 'dark'
   hi! link @text.diff.add Green
   hi! link @text.diff.delete Red
   hi @text.uri.comment guifg=#928374 gui=underline
-  hi! link GitSignsAdd GreenSign
-  hi! link GitSignsChange PurpleSign
-  hi! link GitSignsDelete RedSign
+  hi! link MiniDiffSignAdd GreenSign
+  hi! link MiniDiffSignChange PurpleSign
+  hi! link MiniDiffSignDelete RedSign
   hi MiniJump guifg=#fabd2f gui=bold,underline
   hi! link diffAdded Green
   hi! link diffRemoved Red
@@ -155,7 +155,7 @@ else
   hi CursorLine guibg=#d5c4a1
   hi! link CursorLineNr yellow
   hi DiffAdd guifg=#79740e guibg=#f9f5d7 gui=inverse
-  hi DiffChange guifg=#427b58 guibg=#f9f5d7 gui=inverse
+  hi DiffChange guifg=#8f3f71 guibg=#f9f5d7 gui=inverse
   hi DiffDelete guifg=#920006 guibg=#f9f5d7 gui=inverse
   hi DiffText guifg=#b57614 guibg=#f9f5d7 gui=inverse
   hi! link Directory Blue
@@ -220,9 +220,9 @@ else
   hi! link @text.diff.add Green
   hi! link @text.diff.delete Red
   hi @text.uri.comment guifg=#928374 gui=underline
-  hi! link GitSignsAdd GreenSign
-  hi! link GitSignsChange PurpleSign
-  hi! link GitSignsDelete RedSign
+  hi! link MiniDiffSignAdd GreenSign
+  hi! link MiniDiffSignChange PurpleSign
+  hi! link MiniDiffSignDelete RedSign
   hi MiniJump guifg=#b57614 gui=bold,underline
   hi! link diffAdded Green
   hi! link diffRemoved Red

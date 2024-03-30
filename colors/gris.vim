@@ -16,7 +16,7 @@ if &background ==# 'dark'
   hi CursorLine guibg=#504945
   hi! link CursorLineNr Accent
   hi DiffAdd guifg=#b8bb26 guibg=#1d2021 gui=inverse
-  hi DiffChange guifg=#8ec07c guibg=#1d2021 gui=inverse
+  hi DiffChange guifg=#d3869b guibg=#1d2021 gui=inverse
   hi DiffDelete guifg=#fb4934 guibg=#1d2021 gui=inverse
   hi DiffText guifg=#fabd2f guibg=#1d2021 gui=inverse
   hi! link Directory Accent
@@ -71,9 +71,9 @@ if &background ==# 'dark'
   hi diffAdded guifg=#b8bb26
   hi diffRemoved guifg=#fb4934
   hi! link gitCommitOverflow Error
-  hi GitSignsAdd guifg=#b8bb26 guibg=#282828
-  hi GitSignsChange guifg=#d3869b guibg=#282828
-  hi GitSignsDelete guifg=#fb4934 guibg=#282828
+  hi MiniDiffSignAdd guifg=#b8bb26 guibg=#282828
+  hi MiniDiffSignChange guifg=#d3869b guibg=#282828
+  hi MiniDiffSignDelete guifg=#fb4934 guibg=#282828
 else
   hi Normal guifg=#3c3836 guibg=#f9f5d7
   hi Bold guifg=#282828 gui=bold
@@ -87,7 +87,7 @@ else
   hi CursorLine guibg=#d5c4a1
   hi! link CursorLineNr Accent
   hi DiffAdd guifg=#79740e guibg=#f9f5d7 gui=inverse
-  hi DiffChange guifg=#427b58 guibg=#f9f5d7 gui=inverse
+  hi DiffChange guifg=#8f3f71 guibg=#f9f5d7 gui=inverse
   hi DiffDelete guifg=#920006 guibg=#f9f5d7 gui=inverse
   hi DiffText guifg=#b57614 guibg=#f9f5d7 gui=inverse
   hi! link Directory Accent
@@ -142,7 +142,7 @@ else
   hi diffAdded guifg=#79740e
   hi diffRemoved guifg=#920006
   hi! link gitCommitOverflow Error
-  hi GitSignsAdd guifg=#79740e guibg=#fbf1c7
-  hi GitSignsChange guifg=#8f3f71 guibg=#fbf1c7
-  hi GitSignsDelete guifg=#920006 guibg=#fbf1c7
+  hi MiniDiffSignAdd guifg=#79740e guibg=#fbf1c7
+  hi MiniDiffSignChange guifg=#8f3f71 guibg=#fbf1c7
+  hi MiniDiffSignDelete guifg=#920006 guibg=#fbf1c7
 endif
