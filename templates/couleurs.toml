@@ -59,6 +59,7 @@ MatchParen = { bg = "bg3", gui = "bold" }
 ModeMsg = { link = "YellowBold" }
 MoreMsg = { link = "YellowBold" }
 NonText = { link = "Bg2" }
+NormalFloat = { fg = "fg1", bg = "bg1" }
 NormalNC = { link = "Fg3" }
 Pmenu = { fg = "fg1", bg = "bg2" }
 PmenuSbar = { bg = "bg2" }
@@ -90,13 +91,19 @@ Comment = { link = "Gray" }
 Constant = { link = "Purple" }
 String = { link = "Green" }
 Identifier = { link = "Blue" }
+Function = { link = "Identifier" }
 Statement = { link = "Red" }
+Operator = { link = "Statement" }
 PreProc = { link = "Aqua" }
 Type = { link = "Yellow" }
 Special = { link = "Orange" }
+Delimiter = { link = "Special" }
 Underlined = { fg = "blue", gui = "underline" }
 Error = { fg = "red", bg = "bg0", gui = "bold,inverse" }
 Todo = { fg = "fg1", bg = "bg0", gui = "bold" }
+Added = { link = "Green" }
+Changed = { link = "Purple" }
+Removed = { link = "Red" }
 
 # Diagnostic (`:help diagnostic-highlights`) {{{2
 DiagnosticError = { link = "Red" }
@@ -112,11 +119,12 @@ DiagnosticUnderlineWarn = { gui = "underline", guisp = "yellow" }
 DiagnosticUnderlineInfo = { gui = "underline", guisp = "blue" }
 DiagnosticUnderlineHint = { gui = "underline", guisp = "fg3" }
 
-# Extra tree-sitter highlights  {{{2
-"@text.danger" = { link = "ErrorMsg" }
-"@text.diff.add" = { link = "Green" }
-"@text.diff.delete" = { link = "Red" }
-"@text.uri.comment" = { fg = "gray", gui = "underline" }
+# tree-sitter highlights (`:help treesitter-highlight-groups`) {{{2
+"@comment.error" = { link = "ErrorMsg" }
+"@comment.note" = { link = "@comment.todo" }
+"@comment.warning" = { link = "@comment.todo" }
+"@string.special.url.comment" = { fg = "gray", gui = "underline" }
+"@variable" = { link = "Identifier" }
 
 
 # Plugins {{{1
@@ -126,13 +134,3 @@ MiniDiffSignAdd = { link = "GreenSign" }
 MiniDiffSignChange = { link = "PurpleSign" }
 MiniDiffSignDelete = { link = "RedSign" }
 MiniJump = { fg = "yellow", gui = "bold,underline" }
-
-
-# Filetype-specific highlights {{{1
-
-# gitcommit {{{2
-diffAdded = { link = "Green" }
-diffRemoved = { link = "Red" }
-diffLine = { link = "Blue" }
-gitCommitSummary = { link = "Blue" }
-gitCommitOverflow = { link = "Error" }

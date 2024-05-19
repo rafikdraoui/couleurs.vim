@@ -55,6 +55,7 @@ if &background ==# 'dark'
   hi! link ModeMsg YellowBold
   hi! link MoreMsg YellowBold
   hi! link NonText Bg2
+  hi NormalFloat guifg=#ebdbb2 guibg=#3c3836
   hi! link NormalNC Fg3
   hi Pmenu guifg=#ebdbb2 guibg=#504945
   hi PmenuSbar guibg=#504945
@@ -84,13 +85,19 @@ if &background ==# 'dark'
   hi! link Constant Purple
   hi! link String Green
   hi! link Identifier Blue
+  hi! link Function Identifier
   hi! link Statement Red
+  hi! link Operator Statement
   hi! link PreProc Aqua
   hi! link Type Yellow
   hi! link Special Orange
+  hi! link Delimiter Special
   hi Underlined guifg=#83a598 gui=underline
   hi Error guifg=#fb4934 guibg=#1d2021 gui=bold,inverse
   hi Todo guifg=#ebdbb2 guibg=#1d2021 gui=bold
+  hi! link Added Green
+  hi! link Changed Purple
+  hi! link Removed Red
   hi! link DiagnosticError Red
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
@@ -103,19 +110,15 @@ if &background ==# 'dark'
   hi DiagnosticUnderlineWarn gui=underline guisp=#fabd2f
   hi DiagnosticUnderlineInfo gui=underline guisp=#83a598
   hi DiagnosticUnderlineHint gui=underline guisp=#bdae93
-  hi! link @text.danger ErrorMsg
-  hi! link @text.diff.add Green
-  hi! link @text.diff.delete Red
-  hi @text.uri.comment guifg=#928374 gui=underline
+  hi! link @comment.error ErrorMsg
+  hi! link @comment.note @comment.todo
+  hi! link @comment.warning @comment.todo
+  hi @string.special.url.comment guifg=#928374 gui=underline
+  hi! link @variable Identifier
   hi! link MiniDiffSignAdd GreenSign
   hi! link MiniDiffSignChange PurpleSign
   hi! link MiniDiffSignDelete RedSign
   hi MiniJump guifg=#fabd2f gui=bold,underline
-  hi! link diffAdded Green
-  hi! link diffRemoved Red
-  hi! link diffLine Blue
-  hi! link gitCommitSummary Blue
-  hi! link gitCommitOverflow Error
 else
   hi Normal guifg=#3c3836 guibg=#f9f5d7
   hi Fg0 guifg=#282828
@@ -168,6 +171,7 @@ else
   hi! link ModeMsg YellowBold
   hi! link MoreMsg YellowBold
   hi! link NonText Bg2
+  hi NormalFloat guifg=#3c3836 guibg=#ebdbb2
   hi! link NormalNC Fg3
   hi Pmenu guifg=#3c3836 guibg=#d5c4a1
   hi PmenuSbar guibg=#d5c4a1
@@ -197,13 +201,19 @@ else
   hi! link Constant Purple
   hi! link String Green
   hi! link Identifier Blue
+  hi! link Function Identifier
   hi! link Statement Red
+  hi! link Operator Statement
   hi! link PreProc Aqua
   hi! link Type Yellow
   hi! link Special Orange
+  hi! link Delimiter Special
   hi Underlined guifg=#076678 gui=underline
   hi Error guifg=#920006 guibg=#f9f5d7 gui=bold,inverse
   hi Todo guifg=#3c3836 guibg=#f9f5d7 gui=bold
+  hi! link Added Green
+  hi! link Changed Purple
+  hi! link Removed Red
   hi! link DiagnosticError Red
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
@@ -216,17 +226,13 @@ else
   hi DiagnosticUnderlineWarn gui=underline guisp=#b57614
   hi DiagnosticUnderlineInfo gui=underline guisp=#076678
   hi DiagnosticUnderlineHint gui=underline guisp=#665c54
-  hi! link @text.danger ErrorMsg
-  hi! link @text.diff.add Green
-  hi! link @text.diff.delete Red
-  hi @text.uri.comment guifg=#928374 gui=underline
+  hi! link @comment.error ErrorMsg
+  hi! link @comment.note @comment.todo
+  hi! link @comment.warning @comment.todo
+  hi @string.special.url.comment guifg=#928374 gui=underline
+  hi! link @variable Identifier
   hi! link MiniDiffSignAdd GreenSign
   hi! link MiniDiffSignChange PurpleSign
   hi! link MiniDiffSignDelete RedSign
   hi MiniJump guifg=#b57614 gui=bold,underline
-  hi! link diffAdded Green
-  hi! link diffRemoved Red
-  hi! link diffLine Blue
-  hi! link gitCommitSummary Blue
-  hi! link gitCommitOverflow Error
 endif

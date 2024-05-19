@@ -58,19 +58,24 @@ if &background ==# 'dark'
   hi! link Constant Normal
   hi String guifg=#83a598
   hi! link Identifier Normal
+  hi! link Function Identifier
   hi! link Statement Bold
+  hi! link Operator Statement
   hi! link PreProc Bold
   hi! link Type Normal
   hi! link Special Normal
+  hi! link Delimiter Special
   hi Underlined guifg=#ebdbb2 gui=underline
   hi Error guifg=#fb4934 guibg=#1d2021 gui=bold,inverse
   hi! link Todo AccentBold
-  hi @text.diff.add guifg=#b8bb26
-  hi @text.diff.delete guifg=#fb4934
-  hi @text.uri.comment guifg=#928374 gui=underline
-  hi diffAdded guifg=#b8bb26
-  hi diffRemoved guifg=#fb4934
-  hi! link gitCommitOverflow Error
+  hi Added guifg=#b8bb26
+  hi Changed guifg=#d3869b
+  hi Removed guifg=#fb4934
+  hi! link @variable Identifier
+  hi @string.special.url.comment guifg=#928374 gui=underline
+  hi! link @comment.error @comment.todo
+  hi! link @comment.warning @comment.todo
+  hi! link @comment.note @comment.todo
   hi MiniDiffSignAdd guifg=#b8bb26 guibg=#282828
   hi MiniDiffSignChange guifg=#d3869b guibg=#282828
   hi MiniDiffSignDelete guifg=#fb4934 guibg=#282828
@@ -129,19 +134,24 @@ else
   hi! link Constant Normal
   hi String guifg=#076678
   hi! link Identifier Normal
+  hi! link Function Identifier
   hi! link Statement Bold
+  hi! link Operator Statement
   hi! link PreProc Bold
   hi! link Type Normal
   hi! link Special Normal
+  hi! link Delimiter Special
   hi Underlined guifg=#3c3836 gui=underline
   hi Error guifg=#920006 guibg=#f9f5d7 gui=bold,inverse
   hi! link Todo AccentBold
-  hi @text.diff.add guifg=#79740e
-  hi @text.diff.delete guifg=#920006
-  hi @text.uri.comment guifg=#928374 gui=underline
-  hi diffAdded guifg=#79740e
-  hi diffRemoved guifg=#920006
-  hi! link gitCommitOverflow Error
+  hi Added guifg=#79740e
+  hi Changed guifg=#8f3f71
+  hi Removed guifg=#920006
+  hi! link @variable Identifier
+  hi @string.special.url.comment guifg=#928374 gui=underline
+  hi! link @comment.error @comment.todo
+  hi! link @comment.warning @comment.todo
+  hi! link @comment.note @comment.todo
   hi MiniDiffSignAdd guifg=#79740e guibg=#fbf1c7
   hi MiniDiffSignChange guifg=#8f3f71 guibg=#fbf1c7
   hi MiniDiffSignDelete guifg=#920006 guibg=#fbf1c7

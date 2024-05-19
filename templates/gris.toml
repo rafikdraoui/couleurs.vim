@@ -61,24 +61,30 @@ Comment = { fg = "gray" }
 Constant = { link = "Normal" }
 String = { fg = "blue" }
 Identifier = { link = "Normal" }
+Function = { link = "Identifier" }
 Statement = { link = "Bold" }
+Operator = { link = "Statement" }
 PreProc = { link = "Bold" }
 Type = { link = "Normal" }
 Special = { link = "Normal" }
+Delimiter = { link = "Special" }
 Underlined = { fg = "fg1", gui = "underline" }
 Error = { fg = "red", bg = "bg0", gui = "bold,inverse" }
 Todo = { link = "AccentBold" }
+Added = { fg = "green" }
+Changed = { fg = "purple" }
+Removed = { fg = "red" }
 
-# Extra tree-sitter highlights  {{{2
-"@text.diff.add" = { fg = "green" }
-"@text.diff.delete" = { fg = "red" }
-"@text.uri.comment" = { fg = "gray", gui = "underline" }
+# tree-sitter highlights (`:help treesitter-highlight-groups`) {{{2
+"@variable" = { link = "Identifier" }
+"@string.special.url.comment" = { fg = "gray", gui = "underline" }
+"@comment.error" = { link = "@comment.todo" }
+"@comment.warning" = { link = "@comment.todo" }
+"@comment.note" = { link = "@comment.todo" }
 
-# git/diff highlights {{{1
-diffAdded = { fg = "green" }
-diffRemoved = { fg = "red" }
-gitCommitOverflow = { link = "Error" }
+# Plugins {{{1
 
+# mini {{{2
 MiniDiffSignAdd = { fg = "green", bg = "sign" }
 MiniDiffSignChange = { fg = "purple", bg = "sign" }
 MiniDiffSignDelete = { fg = "red", bg = "sign" }
