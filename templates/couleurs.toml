@@ -51,6 +51,7 @@ DiffDelete = { fg = "red", bg = "bg0", gui = "inverse" }
 DiffText = { fg = "yellow", bg = "bg0", gui = "inverse" }
 Directory = { link = "Blue" }
 ErrorMsg = { fg = "bg0", bg = "red", gui = "bold" }
+FloatTitle = { fg = "orange", bg = "bg1", gui = "bold" }
 FoldColumn = { fg = "gray", bg = "bg1" }
 Folded = { fg = "gray", bg = "sign" }
 IncSearch = { fg = "orange", bg = "bg0", gui = "inverse" }

@@ -47,6 +47,7 @@ if &background ==# 'dark'
   hi DiffText guifg=#fabd2f guibg=#1d2021 gui=inverse
   hi! link Directory Blue
   hi ErrorMsg guifg=#1d2021 guibg=#fb4934 gui=bold
+  hi FloatTitle guifg=#fe8019 guibg=#3c3836 gui=bold
   hi FoldColumn guifg=#928374 guibg=#3c3836
   hi Folded guifg=#928374 guibg=#282828
   hi IncSearch guifg=#fe8019 guibg=#1d2021 gui=inverse
@@ -163,6 +164,7 @@ else
   hi DiffText guifg=#b57614 guibg=#f9f5d7 gui=inverse
   hi! link Directory Blue
   hi ErrorMsg guifg=#f9f5d7 guibg=#920006 gui=bold
+  hi FloatTitle guifg=#d65d0e guibg=#ebdbb2 gui=bold
   hi FoldColumn guifg=#928374 guibg=#ebdbb2
   hi Folded guifg=#928374 guibg=#fbf1c7
   hi IncSearch guifg=#d65d0e guibg=#f9f5d7 gui=inverse
