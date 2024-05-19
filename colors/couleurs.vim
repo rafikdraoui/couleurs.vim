@@ -115,6 +115,7 @@ if &background ==# 'dark'
   hi! link @comment.note @comment.todo
   hi! link @comment.warning @comment.todo
   hi @string.special.url.comment guifg=#928374 gui=underline
+  hi! link @type.builtin @type
   hi! link @variable Identifier
   hi! link MiniDiffSignAdd GreenSign
   hi! link MiniDiffSignChange PurpleSign
@@ -232,6 +233,7 @@ else
   hi! link @comment.note @comment.todo
   hi! link @comment.warning @comment.todo
   hi @string.special.url.comment guifg=#928374 gui=underline
+  hi! link @type.builtin @type
   hi! link @variable Identifier
   hi! link MiniDiffSignAdd GreenSign
   hi! link MiniDiffSignChange PurpleSign

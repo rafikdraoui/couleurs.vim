@@ -125,6 +125,7 @@ DiagnosticUnderlineHint = { gui = "underline", guisp = "fg3" }
 "@comment.note" = { link = "@comment.todo" }
 "@comment.warning" = { link = "@comment.todo" }
 "@string.special.url.comment" = { fg = "gray", gui = "underline" }
+"@type.builtin" = { link = "@type" }
 "@variable" = { link = "Identifier" }
 
 
