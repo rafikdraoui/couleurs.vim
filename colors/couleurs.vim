@@ -38,6 +38,7 @@ if &background ==# 'dark'
   hi AquaSign guifg=#8ec07c guibg=#282828
   hi ColorColumn guibg=#3c3836
   hi Conceal guifg=#83a598 guibg=NONE
+  hi CurSearch guifg=#fabd2f guibg=#1d2021 gui=inverse
   hi! link CursorColumn CursorLine
   hi CursorLine guibg=#504945
   hi! link CursorLineNr yellow
@@ -50,7 +51,7 @@ if &background ==# 'dark'
   hi FloatTitle guifg=#fe8019 guibg=#3c3836 gui=bold
   hi FoldColumn guifg=#928374 guibg=#3c3836
   hi Folded guifg=#928374 guibg=#282828
-  hi IncSearch guifg=#fe8019 guibg=#1d2021 gui=inverse
+  hi! link IncSearch CurSearch
   hi! link LineNr Bg4
   hi MatchParen guibg=#665c54 gui=bold
   hi! link ModeMsg YellowBold
@@ -64,7 +65,7 @@ if &background ==# 'dark'
   hi PmenuThumb guibg=#7c6f64
   hi! link Question OrangeBold
   hi QuickFixLine guifg=#1d2021 guibg=#fabd2f gui=bold
-  hi Search guifg=#fabd2f guibg=#1d2021 gui=inverse
+  hi Search guifg=#fe8019 guibg=#1d2021 gui=inverse
   hi SignColumn guifg=NONE guibg=#282828
   hi! link SpecialKey Fg4
   hi SpellBad gui=undercurl guisp=#fb4934
@@ -156,6 +157,7 @@ else
   hi AquaSign guifg=#427b58 guibg=#fbf1c7
   hi ColorColumn guibg=#ebdbb2
   hi Conceal guifg=#076678 guibg=NONE
+  hi CurSearch guifg=#b57614 guibg=#f9f5d7 gui=inverse
   hi! link CursorColumn CursorLine
   hi CursorLine guibg=#d5c4a1
   hi! link CursorLineNr yellow
@@ -168,7 +170,7 @@ else
   hi FloatTitle guifg=#d65d0e guibg=#ebdbb2 gui=bold
   hi FoldColumn guifg=#928374 guibg=#ebdbb2
   hi Folded guifg=#928374 guibg=#fbf1c7
-  hi IncSearch guifg=#d65d0e guibg=#f9f5d7 gui=inverse
+  hi! link IncSearch CurSearch
   hi! link LineNr Bg4
   hi MatchParen guibg=#bdae93 gui=bold
   hi! link ModeMsg YellowBold
@@ -182,7 +184,7 @@ else
   hi PmenuThumb guibg=#a89984
   hi! link Question OrangeBold
   hi QuickFixLine guifg=#f9f5d7 guibg=#b57614 gui=bold
-  hi Search guifg=#b57614 guibg=#f9f5d7 gui=inverse
+  hi Search guifg=#d65d0e guibg=#f9f5d7 gui=inverse
   hi SignColumn guifg=NONE guibg=#fbf1c7
   hi! link SpecialKey Fg4
   hi SpellBad gui=undercurl guisp=#920006

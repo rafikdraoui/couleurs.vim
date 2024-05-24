@@ -42,6 +42,7 @@ AquaSign = { fg = "aqua", bg = "sign" }
 # Highlight Groups (`:help highlight-groups`) {{{2
 ColorColumn = { bg = "bg1" }
 Conceal = { fg = "blue", bg = "NONE" }
+CurSearch = { fg = "yellow", bg = "bg0", gui = "inverse" }
 CursorColumn = { link = "CursorLine" }
 CursorLine = { bg = "bg2" }
 CursorLineNr = { link = "yellow" }
@@ -54,7 +55,7 @@ ErrorMsg = { fg = "bg0", bg = "red", gui = "bold" }
 FloatTitle = { fg = "orange", bg = "bg1", gui = "bold" }
 FoldColumn = { fg = "gray", bg = "bg1" }
 Folded = { fg = "gray", bg = "sign" }
-IncSearch = { fg = "orange", bg = "bg0", gui = "inverse" }
+IncSearch = { link = "CurSearch" }
 LineNr = { link = "Bg4" }
 MatchParen = { bg = "bg3", gui = "bold" }
 ModeMsg = { link = "YellowBold" }
@@ -68,7 +69,7 @@ PmenuSel = { fg = "bg2", bg = "blue", gui = "bold" }
 PmenuThumb = { bg = "bg4" }
 Question = { link = "OrangeBold" }
 QuickFixLine = { fg = "bg0", bg = "yellow", gui = "bold" }
-Search = { fg = "yellow", bg = "bg0", gui = "inverse" }
+Search = { fg = "orange", bg = "bg0", gui = "inverse" }
 SignColumn = { fg = "NONE", bg = "sign" }
 SpecialKey = { link = "Fg4" }
 SpellBad = { gui = "undercurl", guisp = "red" }

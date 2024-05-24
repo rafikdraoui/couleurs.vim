@@ -14,6 +14,7 @@ if &background ==# 'dark'
   hi Conceal guifg=#83a598 guibg=NONE
   hi! link CursorColumn CursorLine
   hi CursorLine guibg=#504945
+  hi CurSearch guifg=#fabd2f guibg=#1d2021 gui=inverse
   hi! link CursorLineNr Accent
   hi DiffAdd guifg=#b8bb26 guibg=#1d2021 gui=inverse
   hi DiffChange guifg=#d3869b guibg=#1d2021 gui=inverse
@@ -23,7 +24,7 @@ if &background ==# 'dark'
   hi ErrorMsg guifg=#1d2021 guibg=#fb4934 gui=bold
   hi FoldColumn guifg=#928374 guibg=#3c3836
   hi Folded guifg=#928374 guibg=#282828
-  hi IncSearch guifg=#fe8019 guibg=#1d2021 gui=inverse
+  hi! link IncSearch CurSearch
   hi! link LineNr MutedBg
   hi! link MatchParen AccentBold
   hi! link ModeMsg AccentBold
@@ -90,6 +91,7 @@ else
   hi Conceal guifg=#076678 guibg=NONE
   hi! link CursorColumn CursorLine
   hi CursorLine guibg=#d5c4a1
+  hi CurSearch guifg=#b57614 guibg=#f9f5d7 gui=inverse
   hi! link CursorLineNr Accent
   hi DiffAdd guifg=#79740e guibg=#f9f5d7 gui=inverse
   hi DiffChange guifg=#8f3f71 guibg=#f9f5d7 gui=inverse
@@ -99,7 +101,7 @@ else
   hi ErrorMsg guifg=#f9f5d7 guibg=#920006 gui=bold
   hi FoldColumn guifg=#928374 guibg=#ebdbb2
   hi Folded guifg=#928374 guibg=#fbf1c7
-  hi IncSearch guifg=#d65d0e guibg=#f9f5d7 gui=inverse
+  hi! link IncSearch CurSearch
   hi! link LineNr MutedBg
   hi! link MatchParen AccentBold
   hi! link ModeMsg AccentBold

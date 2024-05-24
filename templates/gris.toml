@@ -15,6 +15,7 @@ ColorColumn = { bg = "bg1" }
 Conceal = { fg = "blue", bg = "NONE" }
 CursorColumn = { link = "CursorLine" }
 CursorLine = { bg = "bg2" }
+CurSearch = { fg = "yellow", bg = "bg0", gui = "inverse" }
 CursorLineNr = { link = "Accent" }
 DiffAdd = { fg = "green", bg = "bg0", gui = "inverse" }
 DiffChange = { fg = "purple", bg = "bg0", gui = "inverse" }
@@ -24,7 +25,7 @@ Directory = { link = "Accent" }
 ErrorMsg = { fg = "bg0", bg = "red", gui = "bold" }
 FoldColumn = { fg = "gray", bg = "bg1" }
 Folded = { fg = "gray", bg = "sign" }
-IncSearch = { fg = "orange", bg = "bg0", gui = "inverse" }
+IncSearch = { link = "CurSearch" }
 LineNr = { link = "MutedBg" }
 MatchParen = { link = "AccentBold" }
 ModeMsg = { link = "AccentBold" }
