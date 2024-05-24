@@ -45,13 +45,18 @@ Conceal = { fg = "blue", bg = "NONE" }
 CurSearch = { fg = "yellow", bg = "bg0", gui = "inverse" }
 CursorColumn = { link = "CursorLine" }
 CursorLine = { bg = "bg2" }
+CursorLineFold = { link = "FoldColumn" }
 CursorLineNr = { link = "yellow" }
+CursorLineSign = { link = "SignColumn" }
 DiffAdd = { fg = "green", bg = "bg0", gui = "inverse" }
 DiffChange = { fg = "purple", bg = "bg0", gui = "inverse" }
 DiffDelete = { fg = "red", bg = "bg0", gui = "inverse" }
 DiffText = { fg = "yellow", bg = "bg0", gui = "inverse" }
 Directory = { link = "Blue" }
+EndOfBuffer = { link = "NonText" }
 ErrorMsg = { fg = "bg0", bg = "red", gui = "bold" }
+FloatBorder = { link = "NormalFloat" }
+FloatFooter = { link = "FloatTitle" }
 FloatTitle = { fg = "orange", bg = "bg1", gui = "bold" }
 FoldColumn = { fg = "gray", bg = "bg1" }
 Folded = { fg = "gray", bg = "sign" }
@@ -60,10 +65,16 @@ LineNr = { link = "Bg4" }
 MatchParen = { bg = "bg3", gui = "bold" }
 ModeMsg = { link = "YellowBold" }
 MoreMsg = { link = "YellowBold" }
+MsgArea = { link = "Normal" }
+MsgSeparator = { link = "StatusLine" }
 NonText = { link = "Bg2" }
 NormalFloat = { fg = "fg1", bg = "bg1" }
 NormalNC = { link = "Fg3" }
 Pmenu = { fg = "fg1", bg = "bg2" }
+PmenuExtra = { link = "Pmenu" }
+PmenuExtraSel = { link = "PmenuSel" }
+PmenuKind = { link = "Pmenu" }
+PmenuKindSel = { link = "PmenuSel" }
 PmenuSbar = { bg = "bg2" }
 PmenuSel = { fg = "bg2", bg = "blue", gui = "bold" }
 PmenuThumb = { bg = "bg4" }
@@ -71,6 +82,7 @@ Question = { link = "OrangeBold" }
 QuickFixLine = { fg = "bg0", bg = "yellow", gui = "bold" }
 Search = { fg = "orange", bg = "bg0", gui = "inverse" }
 SignColumn = { fg = "NONE", bg = "sign" }
+SnippetTabstop = { link = "Visual" }
 SpecialKey = { link = "Fg4" }
 SpellBad = { gui = "undercurl", guisp = "red" }
 SpellCap = { gui = "undercurl", guisp = "blue" }
@@ -78,6 +90,7 @@ SpellLocal = { gui = "undercurl", guisp = "aqua" }
 SpellRare = { gui = "undercurl", guisp = "purple" }
 StatusLine = { fg = "bg2", bg = "fg1", gui = "inverse" }
 StatusLineNC = { fg = "bg1", bg = "fg4", gui = "inverse" }
+Substitute = { link = "IncSearch" }
 TabLine = { fg = "bg4", bg = "bg1", gui = "NONE" }
 TabLineFill = { link = "TabLine" }
 TabLineSel = { fg = "green", bg = "bg1", gui = "bold" }
@@ -85,7 +98,10 @@ TermCursorNC = { link = "IncSearch" }
 Title = { link = "OrangeBold" }
 Visual = { bg = "bg3", gui = "inverse" }
 WarningMsg = { link = "RedBold" }
+WhiteSpace = { link = "NonText" }
 WildMenu = { link = "PmenuSel" }
+WinBar = { link = "StatusLine" }
+WinBarNC = { link = "StatusLineNC" }
 WinSeparator = { link = "Bg3" }
 
 # Syntax (`:help group-name`) {{{2

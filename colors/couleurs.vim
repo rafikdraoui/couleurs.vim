@@ -41,13 +41,18 @@ if &background ==# 'dark'
   hi CurSearch guifg=#fabd2f guibg=#1d2021 gui=inverse
   hi! link CursorColumn CursorLine
   hi CursorLine guibg=#504945
+  hi! link CursorLineFold FoldColumn
   hi! link CursorLineNr yellow
+  hi! link CursorLineSign SignColumn
   hi DiffAdd guifg=#b8bb26 guibg=#1d2021 gui=inverse
   hi DiffChange guifg=#d3869b guibg=#1d2021 gui=inverse
   hi DiffDelete guifg=#fb4934 guibg=#1d2021 gui=inverse
   hi DiffText guifg=#fabd2f guibg=#1d2021 gui=inverse
   hi! link Directory Blue
+  hi! link EndOfBuffer NonText
   hi ErrorMsg guifg=#1d2021 guibg=#fb4934 gui=bold
+  hi! link FloatBorder NormalFloat
+  hi! link FloatFooter FloatTitle
   hi FloatTitle guifg=#fe8019 guibg=#3c3836 gui=bold
   hi FoldColumn guifg=#928374 guibg=#3c3836
   hi Folded guifg=#928374 guibg=#282828
@@ -56,10 +61,16 @@ if &background ==# 'dark'
   hi MatchParen guibg=#665c54 gui=bold
   hi! link ModeMsg YellowBold
   hi! link MoreMsg YellowBold
+  hi! link MsgArea Normal
+  hi! link MsgSeparator StatusLine
   hi! link NonText Bg2
   hi NormalFloat guifg=#ebdbb2 guibg=#3c3836
   hi! link NormalNC Fg3
   hi Pmenu guifg=#ebdbb2 guibg=#504945
+  hi! link PmenuExtra Pmenu
+  hi! link PmenuExtraSel PmenuSel
+  hi! link PmenuKind Pmenu
+  hi! link PmenuKindSel PmenuSel
   hi PmenuSbar guibg=#504945
   hi PmenuSel guifg=#504945 guibg=#83a598 gui=bold
   hi PmenuThumb guibg=#7c6f64
@@ -67,6 +78,7 @@ if &background ==# 'dark'
   hi QuickFixLine guifg=#1d2021 guibg=#fabd2f gui=bold
   hi Search guifg=#fe8019 guibg=#1d2021 gui=inverse
   hi SignColumn guifg=NONE guibg=#282828
+  hi! link SnippetTabstop Visual
   hi! link SpecialKey Fg4
   hi SpellBad gui=undercurl guisp=#fb4934
   hi SpellCap gui=undercurl guisp=#83a598
@@ -74,6 +86,7 @@ if &background ==# 'dark'
   hi SpellRare gui=undercurl guisp=#d3869b
   hi StatusLine guifg=#504945 guibg=#ebdbb2 gui=inverse
   hi StatusLineNC guifg=#3c3836 guibg=#a89984 gui=inverse
+  hi! link Substitute IncSearch
   hi TabLine guifg=#7c6f64 guibg=#3c3836 gui=NONE
   hi! link TabLineFill TabLine
   hi TabLineSel guifg=#b8bb26 guibg=#3c3836 gui=bold
@@ -81,7 +94,10 @@ if &background ==# 'dark'
   hi! link Title OrangeBold
   hi Visual guibg=#665c54 gui=inverse
   hi! link WarningMsg RedBold
+  hi! link WhiteSpace NonText
   hi! link WildMenu PmenuSel
+  hi! link WinBar StatusLine
+  hi! link WinBarNC StatusLineNC
   hi! link WinSeparator Bg3
   hi! link Comment Gray
   hi! link Constant Purple
@@ -163,13 +179,18 @@ else
   hi CurSearch guifg=#b57614 guibg=#f9f5d7 gui=inverse
   hi! link CursorColumn CursorLine
   hi CursorLine guibg=#d5c4a1
+  hi! link CursorLineFold FoldColumn
   hi! link CursorLineNr yellow
+  hi! link CursorLineSign SignColumn
   hi DiffAdd guifg=#79740e guibg=#f9f5d7 gui=inverse
   hi DiffChange guifg=#8f3f71 guibg=#f9f5d7 gui=inverse
   hi DiffDelete guifg=#920006 guibg=#f9f5d7 gui=inverse
   hi DiffText guifg=#b57614 guibg=#f9f5d7 gui=inverse
   hi! link Directory Blue
+  hi! link EndOfBuffer NonText
   hi ErrorMsg guifg=#f9f5d7 guibg=#920006 gui=bold
+  hi! link FloatBorder NormalFloat
+  hi! link FloatFooter FloatTitle
   hi FloatTitle guifg=#d65d0e guibg=#ebdbb2 gui=bold
   hi FoldColumn guifg=#928374 guibg=#ebdbb2
   hi Folded guifg=#928374 guibg=#fbf1c7
@@ -178,10 +199,16 @@ else
   hi MatchParen guibg=#bdae93 gui=bold
   hi! link ModeMsg YellowBold
   hi! link MoreMsg YellowBold
+  hi! link MsgArea Normal
+  hi! link MsgSeparator StatusLine
   hi! link NonText Bg2
   hi NormalFloat guifg=#3c3836 guibg=#ebdbb2
   hi! link NormalNC Fg3
   hi Pmenu guifg=#3c3836 guibg=#d5c4a1
+  hi! link PmenuExtra Pmenu
+  hi! link PmenuExtraSel PmenuSel
+  hi! link PmenuKind Pmenu
+  hi! link PmenuKindSel PmenuSel
   hi PmenuSbar guibg=#d5c4a1
   hi PmenuSel guifg=#d5c4a1 guibg=#076678 gui=bold
   hi PmenuThumb guibg=#a89984
@@ -189,6 +216,7 @@ else
   hi QuickFixLine guifg=#f9f5d7 guibg=#b57614 gui=bold
   hi Search guifg=#d65d0e guibg=#f9f5d7 gui=inverse
   hi SignColumn guifg=NONE guibg=#fbf1c7
+  hi! link SnippetTabstop Visual
   hi! link SpecialKey Fg4
   hi SpellBad gui=undercurl guisp=#920006
   hi SpellCap gui=undercurl guisp=#076678
@@ -196,6 +224,7 @@ else
   hi SpellRare gui=undercurl guisp=#8f3f71
   hi StatusLine guifg=#d5c4a1 guibg=#3c3836 gui=inverse
   hi StatusLineNC guifg=#ebdbb2 guibg=#7c6f64 gui=inverse
+  hi! link Substitute IncSearch
   hi TabLine guifg=#a89984 guibg=#ebdbb2 gui=NONE
   hi! link TabLineFill TabLine
   hi TabLineSel guifg=#79740e guibg=#ebdbb2 gui=bold
@@ -203,7 +232,10 @@ else
   hi! link Title OrangeBold
   hi Visual guibg=#bdae93 gui=inverse
   hi! link WarningMsg RedBold
+  hi! link WhiteSpace NonText
   hi! link WildMenu PmenuSel
+  hi! link WinBar StatusLine
+  hi! link WinBarNC StatusLineNC
   hi! link WinSeparator Bg3
   hi! link Comment Gray
   hi! link Constant Purple

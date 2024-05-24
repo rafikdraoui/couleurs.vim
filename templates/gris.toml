@@ -13,16 +13,22 @@ MutedBg = { fg = "bg4" }
 # Highlight Groups (`:help highlight-groups`) {{{2
 ColorColumn = { bg = "bg1" }
 Conceal = { fg = "blue", bg = "NONE" }
+CurSearch = { fg = "yellow", bg = "bg0", gui = "inverse" }
 CursorColumn = { link = "CursorLine" }
 CursorLine = { bg = "bg2" }
-CurSearch = { fg = "yellow", bg = "bg0", gui = "inverse" }
+CursorLineFold = { link = "FoldColumn" }
 CursorLineNr = { link = "Accent" }
+CursorLineSign = { link = "SignColumn" }
 DiffAdd = { fg = "green", bg = "bg0", gui = "inverse" }
 DiffChange = { fg = "purple", bg = "bg0", gui = "inverse" }
 DiffDelete = { fg = "red", bg = "bg0", gui = "inverse" }
 DiffText = { fg = "yellow", bg = "bg0", gui = "inverse" }
 Directory = { link = "Accent" }
+EndOfBuffer = { link = "NonText" }
 ErrorMsg = { fg = "bg0", bg = "red", gui = "bold" }
+FloatBorder = { link = "NormalFloat" }
+FloatFooter = { link = "FloatTitle" }
+FloatTitle = { fg = "aqua", bg = "bg1", gui = "bold" }
 FoldColumn = { fg = "gray", bg = "bg1" }
 Folded = { fg = "gray", bg = "sign" }
 IncSearch = { link = "CurSearch" }
@@ -30,9 +36,16 @@ LineNr = { link = "MutedBg" }
 MatchParen = { link = "AccentBold" }
 ModeMsg = { link = "AccentBold" }
 MoreMsg = { link = "AccentBold" }
+MsgArea = { link = "Normal" }
+MsgSeparator = { link = "StatusLine" }
 NonText = { link = "MutedBg" }
+NormalFloat = { fg = "fg1", bg = "bg1" }
 NormalNC = { link = "MutedFg" }
 Pmenu = { fg = "fg1", bg = "bg2" }
+PmenuExtra = { link = "Pmenu" }
+PmenuExtraSel = { link = "PmenuSel" }
+PmenuKind = { link = "Pmenu" }
+PmenuKindSel = { link = "PmenuSel" }
 PmenuSbar = { bg = "bg2" }
 PmenuSel = { fg = "bg2", bg = "aqua", gui = "bold" }
 PmenuThumb = { bg = "bg4" }
@@ -40,6 +53,7 @@ Question = { link = "AccentBold" }
 QuickFixLine = { fg = "bg0", bg = "aqua", gui = "bold" }
 Search = { fg = "aqua", bg = "bg0", gui = "inverse" }
 SignColumn = { fg = "NONE", bg = "sign" }
+SnippetTabstop = { link = "Visual" }
 SpecialKey = { link = "MutedFg" }
 SpellBad = { gui = "undercurl", guisp = "red" }
 SpellCap = { gui = "undercurl", guisp = "blue" }
@@ -47,6 +61,7 @@ SpellLocal = { gui = "undercurl", guisp = "aqua" }
 SpellRare = { gui = "undercurl", guisp = "purple" }
 StatusLine = { fg = "bg2", bg = "fg1", gui = "inverse" }
 StatusLineNC = { fg = "bg1", bg = "fg4", gui = "inverse" }
+Substitute = { link = "IncSearch" }
 TabLine = { fg = "bg4", bg = "bg1", gui = "NONE" }
 TabLineFill = { link = "TabLine" }
 TabLineSel = { fg = "aqua", bg = "bg1", gui = "bold" }
@@ -54,7 +69,10 @@ TermCursorNC = { link = "IncSearch" }
 Title = { link = "AccentBold" }
 Visual = { bg = "bg3", gui = "inverse" }
 WarningMsg = { fg = "red", gui = "bold" }
+WhiteSpace = { link = "NonText" }
 WildMenu = { link = "PmenuSel" }
+WinBar = { link = "StatusLine" }
+WinBarNC = { link = "StatusLineNC" }
 WinSeparator = { link = "MutedBg" }
 
 # Syntax (`:help group-name`) {{{2
@@ -94,11 +112,11 @@ DiagnosticUnderlineHint = { link = "DiagnosticUnderlineError" }
 DiagnosticUnderlineOk = { link = "DiagnosticUnderlineError" }
 
 # tree-sitter highlights (`:help treesitter-highlight-groups`) {{{2
-"@variable" = { link = "Identifier" }
-"@string.special.url.comment" = { fg = "gray", gui = "underline" }
 "@comment.error" = { link = "@comment.todo" }
-"@comment.warning" = { link = "@comment.todo" }
 "@comment.note" = { link = "@comment.todo" }
+"@comment.warning" = { link = "@comment.todo" }
+"@string.special.url.comment" = { fg = "gray", gui = "underline" }
+"@variable" = { link = "Identifier" }
 
 # Plugins {{{1
 
