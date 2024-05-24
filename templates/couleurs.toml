@@ -112,14 +112,17 @@ DiagnosticError = { link = "Red" }
 DiagnosticWarn = { link = "Yellow" }
 DiagnosticInfo = { link = "Blue" }
 DiagnosticHint = { link = "Fg3" }
+DiagnosticOk = { link = "Aqua" }
 DiagnosticSignError = { link = "RedSign" }
 DiagnosticSignWarn = { link = "YellowSign" }
 DiagnosticSignInfo = { link = "BlueSign" }
 DiagnosticSignHint = { fg = "fg3", bg = "sign" }
+DiagnosticSignOk = { fg = "aqua", bg = "sign" }
 DiagnosticUnderlineError = { gui = "underline", guisp = "red" }
 DiagnosticUnderlineWarn = { gui = "underline", guisp = "yellow" }
 DiagnosticUnderlineInfo = { gui = "underline", guisp = "blue" }
 DiagnosticUnderlineHint = { gui = "underline", guisp = "fg3" }
+DiagnosticUnderlineOk = { gui = "underline", guisp = "aqua" }
 
 # tree-sitter highlights (`:help treesitter-highlight-groups`) {{{2
 "@comment.error" = { link = "ErrorMsg" }

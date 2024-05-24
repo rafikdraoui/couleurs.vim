@@ -104,14 +104,17 @@ if &background ==# 'dark'
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
   hi! link DiagnosticHint Fg3
+  hi! link DiagnosticOk Aqua
   hi! link DiagnosticSignError RedSign
   hi! link DiagnosticSignWarn YellowSign
   hi! link DiagnosticSignInfo BlueSign
   hi DiagnosticSignHint guifg=#bdae93 guibg=#282828
+  hi DiagnosticSignOk guifg=#8ec07c guibg=#282828
   hi DiagnosticUnderlineError gui=underline guisp=#fb4934
   hi DiagnosticUnderlineWarn gui=underline guisp=#fabd2f
   hi DiagnosticUnderlineInfo gui=underline guisp=#83a598
   hi DiagnosticUnderlineHint gui=underline guisp=#bdae93
+  hi DiagnosticUnderlineOk gui=underline guisp=#8ec07c
   hi! link @comment.error ErrorMsg
   hi! link @comment.note @comment.todo
   hi! link @comment.warning @comment.todo
@@ -223,14 +226,17 @@ else
   hi! link DiagnosticWarn Yellow
   hi! link DiagnosticInfo Blue
   hi! link DiagnosticHint Fg3
+  hi! link DiagnosticOk Aqua
   hi! link DiagnosticSignError RedSign
   hi! link DiagnosticSignWarn YellowSign
   hi! link DiagnosticSignInfo BlueSign
   hi DiagnosticSignHint guifg=#665c54 guibg=#fbf1c7
+  hi DiagnosticSignOk guifg=#427b58 guibg=#fbf1c7
   hi DiagnosticUnderlineError gui=underline guisp=#920006
   hi DiagnosticUnderlineWarn gui=underline guisp=#b57614
   hi DiagnosticUnderlineInfo gui=underline guisp=#076678
   hi DiagnosticUnderlineHint gui=underline guisp=#665c54
+  hi DiagnosticUnderlineOk gui=underline guisp=#427b58
   hi! link @comment.error ErrorMsg
   hi! link @comment.note @comment.todo
   hi! link @comment.warning @comment.todo

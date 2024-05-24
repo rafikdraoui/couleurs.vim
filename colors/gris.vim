@@ -72,6 +72,21 @@ if &background ==# 'dark'
   hi Added guifg=#b8bb26
   hi Changed guifg=#d3869b
   hi Removed guifg=#fb4934
+  hi! link DiagnosticError Accent
+  hi! link DiagnosticWarn DiagnosticError
+  hi! link DiagnosticInfo DiagnosticError
+  hi! link DiagnosticHint DiagnosticError
+  hi! link DiagnosticOk DiagnosticError
+  hi DiagnosticSignError guifg=#8ec07c guibg=#282828
+  hi! link DiagnosticSignWarn DiagnosticSignError
+  hi! link DiagnosticSignInfo DiagnosticSignError
+  hi! link DiagnosticSignHint DiagnosticSignError
+  hi! link DiagnosticSignOk DiagnosticSignError
+  hi DiagnosticUnderlineError gui=underline guisp=#8ec07c
+  hi! link DiagnosticUnderlineWarn DiagnosticUnderlineError
+  hi! link DiagnosticUnderlineInfo DiagnosticUnderlineError
+  hi! link DiagnosticUnderlineHint DiagnosticUnderlineError
+  hi! link DiagnosticUnderlineOk DiagnosticUnderlineError
   hi! link @variable Identifier
   hi @string.special.url.comment guifg=#928374 gui=underline
   hi! link @comment.error @comment.todo
@@ -149,6 +164,21 @@ else
   hi Added guifg=#79740e
   hi Changed guifg=#8f3f71
   hi Removed guifg=#920006
+  hi! link DiagnosticError Accent
+  hi! link DiagnosticWarn DiagnosticError
+  hi! link DiagnosticInfo DiagnosticError
+  hi! link DiagnosticHint DiagnosticError
+  hi! link DiagnosticOk DiagnosticError
+  hi DiagnosticSignError guifg=#427b58 guibg=#fbf1c7
+  hi! link DiagnosticSignWarn DiagnosticSignError
+  hi! link DiagnosticSignInfo DiagnosticSignError
+  hi! link DiagnosticSignHint DiagnosticSignError
+  hi! link DiagnosticSignOk DiagnosticSignError
+  hi DiagnosticUnderlineError gui=underline guisp=#427b58
+  hi! link DiagnosticUnderlineWarn DiagnosticUnderlineError
+  hi! link DiagnosticUnderlineInfo DiagnosticUnderlineError
+  hi! link DiagnosticUnderlineHint DiagnosticUnderlineError
+  hi! link DiagnosticUnderlineOk DiagnosticUnderlineError
   hi! link @variable Identifier
   hi @string.special.url.comment guifg=#928374 gui=underline
   hi! link @comment.error @comment.todo

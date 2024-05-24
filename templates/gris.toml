@@ -76,6 +76,23 @@ Added = { fg = "green" }
 Changed = { fg = "purple" }
 Removed = { fg = "red" }
 
+# Diagnostic (`:help diagnostic-highlights`) {{{2
+DiagnosticError = { link = "Accent" }
+DiagnosticWarn = { link = "DiagnosticError" }
+DiagnosticInfo = { link = "DiagnosticError" }
+DiagnosticHint = { link = "DiagnosticError" }
+DiagnosticOk = { link = "DiagnosticError" }
+DiagnosticSignError = { fg = "aqua", bg = "sign" }
+DiagnosticSignWarn = { link = "DiagnosticSignError" }
+DiagnosticSignInfo = { link = "DiagnosticSignError" }
+DiagnosticSignHint = { link = "DiagnosticSignError" }
+DiagnosticSignOk = { link = "DiagnosticSignError" }
+DiagnosticUnderlineError = { gui = "underline", guisp = "aqua" }
+DiagnosticUnderlineWarn = { link = "DiagnosticUnderlineError" }
+DiagnosticUnderlineInfo = { link = "DiagnosticUnderlineError" }
+DiagnosticUnderlineHint = { link = "DiagnosticUnderlineError" }
+DiagnosticUnderlineOk = { link = "DiagnosticUnderlineError" }
+
 # tree-sitter highlights (`:help treesitter-highlight-groups`) {{{2
 "@variable" = { link = "Identifier" }
 "@string.special.url.comment" = { fg = "gray", gui = "underline" }
