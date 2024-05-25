@@ -110,6 +110,9 @@ if &background ==# 'dark'
   hi! link @comment.warning @comment.todo
   hi @string.special.url.comment guifg=#928374 gui=underline
   hi! link @variable Identifier
+  hi! link diffAdded Added
+  hi! link diffChanged Changed
+  hi! link diffRemoved Removed
   hi MiniDiffSignAdd guifg=#b8bb26 guibg=#282828
   hi MiniDiffSignChange guifg=#d3869b guibg=#282828
   hi MiniDiffSignDelete guifg=#fb4934 guibg=#282828
@@ -220,6 +223,9 @@ else
   hi! link @comment.warning @comment.todo
   hi @string.special.url.comment guifg=#928374 gui=underline
   hi! link @variable Identifier
+  hi! link diffAdded Added
+  hi! link diffChanged Changed
+  hi! link diffRemoved Removed
   hi MiniDiffSignAdd guifg=#79740e guibg=#fbf1c7
   hi MiniDiffSignChange guifg=#8f3f71 guibg=#fbf1c7
   hi MiniDiffSignDelete guifg=#920006 guibg=#fbf1c7

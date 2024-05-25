@@ -151,6 +151,11 @@ DiagnosticUnderlineOk = { gui = "underline", guisp = "aqua" }
 
 # Plugins {{{1
 
+# GV and git-messenger {{{2
+diffAdded = { link = "Added" }
+diffChanged = { link = "Changed" }
+diffRemoved = { link = "Removed" }
+
 # mini {{{2
 MiniDiffSignAdd = { link = "GreenSign" }
 MiniDiffSignChange = { link = "PurpleSign" }

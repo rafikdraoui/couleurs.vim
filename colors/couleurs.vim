@@ -137,6 +137,9 @@ if &background ==# 'dark'
   hi @string.special.url.comment guifg=#928374 gui=underline
   hi! link @type.builtin @type
   hi! link @variable Identifier
+  hi! link diffAdded Added
+  hi! link diffChanged Changed
+  hi! link diffRemoved Removed
   hi! link MiniDiffSignAdd GreenSign
   hi! link MiniDiffSignChange PurpleSign
   hi! link MiniDiffSignDelete RedSign
@@ -275,6 +278,9 @@ else
   hi @string.special.url.comment guifg=#928374 gui=underline
   hi! link @type.builtin @type
   hi! link @variable Identifier
+  hi! link diffAdded Added
+  hi! link diffChanged Changed
+  hi! link diffRemoved Removed
   hi! link MiniDiffSignAdd GreenSign
   hi! link MiniDiffSignChange PurpleSign
   hi! link MiniDiffSignDelete RedSign
