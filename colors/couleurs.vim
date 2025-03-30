@@ -90,7 +90,6 @@ if &background ==# 'dark'
   hi TabLine guifg=#7c6f64 guibg=#3c3836 gui=NONE
   hi! link TabLineFill TabLine
   hi TabLineSel guifg=#b8bb26 guibg=#3c3836 gui=bold
-  hi! link TermCursorNC IncSearch
   hi! link Title OrangeBold
   hi Visual guibg=#665c54 gui=inverse
   hi! link WarningMsg RedBold
@@ -231,7 +230,6 @@ else
   hi TabLine guifg=#a89984 guibg=#ebdbb2 gui=NONE
   hi! link TabLineFill TabLine
   hi TabLineSel guifg=#79740e guibg=#ebdbb2 gui=bold
-  hi! link TermCursorNC IncSearch
   hi! link Title OrangeBold
   hi Visual guibg=#bdae93 gui=inverse
   hi! link WarningMsg RedBold

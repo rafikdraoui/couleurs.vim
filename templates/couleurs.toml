@@ -94,7 +94,6 @@ Substitute = { link = "IncSearch" }
 TabLine = { fg = "bg4", bg = "bg1", gui = "NONE" }
 TabLineFill = { link = "TabLine" }
 TabLineSel = { fg = "green", bg = "bg1", gui = "bold" }
-TermCursorNC = { link = "IncSearch" }
 Title = { link = "OrangeBold" }
 Visual = { bg = "bg3", gui = "inverse" }
 WarningMsg = { link = "RedBold" }
