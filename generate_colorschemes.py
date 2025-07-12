@@ -72,15 +72,11 @@ def write_colorscheme(name: str, palette: Palette, highlights: list[Highlight]) 
     light_hl_cmds = [hl_cmd(palette.light, hl) for hl in highlights]
 
     with open(f"colors/{name}.vim", "w", encoding="utf-8") as f:
-        for line in preamble:
-            f.write(f"{line}\n")
-
+        f.writelines(f"{line}\n" for line in preamble)
         f.write("if &background ==# 'dark'\n")
-        for line in dark_hl_cmds:
-            f.write(f"  {line}\n")
+        f.writelines(f"  {line}\n" for line in dark_hl_cmds)
         f.write("else\n")
-        for line in light_hl_cmds:
-            f.write(f"  {line}\n")
+        f.writelines(f"  {line}\n" for line in light_hl_cmds)
         f.write("endif\n")
 
 
