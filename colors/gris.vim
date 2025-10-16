@@ -4,7 +4,8 @@ if exists('syntax_on')
 endif
 let g:colors_name='gris'
 if &background ==# 'dark'
-  hi Normal guifg=#ebdbb2 guibg=#1d2021
+  hi Normal guifg=#d5c4a1 guibg=#1d2021
+  hi BaseFg guifg=#d5c4a1
   hi Bold guifg=#fbf1c7 gui=bold
   hi Accent guifg=#8ec07c
   hi AccentBold guifg=#8ec07c gui=bold
@@ -72,43 +73,50 @@ if &background ==# 'dark'
   hi! link WinBar StatusLine
   hi! link WinBarNC StatusLineNC
   hi! link WinSeparator MutedBg
-  hi Comment guifg=#928374
-  hi! link Constant Normal
+  hi! link Comment Accent
+  hi! link Constant BaseFg
   hi String guifg=#83a598
-  hi! link Identifier Normal
+  hi! link Identifier BaseFg
   hi! link Function Identifier
   hi! link Statement Bold
-  hi! link Operator Statement
-  hi! link PreProc Bold
-  hi! link Type Normal
-  hi! link Special Normal
-  hi! link Delimiter Special
+  hi! link Operator MutedFg
+  hi! link PreProc BaseFg
+  hi! link Type BaseFg
+  hi! link Special BaseFg
+  hi! link Delimiter MutedFg
   hi Underlined guifg=#ebdbb2 gui=underline
   hi Error guifg=#fb4934 guibg=#1d2021 gui=bold,inverse
   hi! link Todo AccentBold
   hi Added guifg=#b8bb26
   hi Changed guifg=#d3869b
   hi Removed guifg=#fb4934
-  hi! link DiagnosticError Accent
+  hi DiagnosticError guifg=#fb4934
   hi! link DiagnosticWarn DiagnosticError
   hi! link DiagnosticInfo DiagnosticError
   hi! link DiagnosticHint DiagnosticError
   hi! link DiagnosticOk DiagnosticError
-  hi DiagnosticSignError guifg=#8ec07c guibg=#282828
+  hi DiagnosticSignError guifg=#fb4934 guibg=#282828
   hi! link DiagnosticSignWarn DiagnosticSignError
   hi! link DiagnosticSignInfo DiagnosticSignError
   hi! link DiagnosticSignHint DiagnosticSignError
   hi! link DiagnosticSignOk DiagnosticSignError
-  hi DiagnosticUnderlineError gui=underline guisp=#8ec07c
+  hi DiagnosticUnderlineError gui=underline guisp=#fb4934
   hi! link DiagnosticUnderlineWarn DiagnosticUnderlineError
   hi! link DiagnosticUnderlineInfo DiagnosticUnderlineError
   hi! link DiagnosticUnderlineHint DiagnosticUnderlineError
   hi! link DiagnosticUnderlineOk DiagnosticUnderlineError
+  hi! link DiagnosticUnnecessary MutedFg
   hi! link @comment.error @comment.todo
   hi! link @comment.note @comment.todo
   hi! link @comment.warning @comment.todo
-  hi @string.special.url.comment guifg=#928374 gui=underline
+  hi @markup.raw guifg=#83a598
+  hi! link @punctuation.special @punctuation
+  hi! link @string.documentation Comment
+  hi @string.special.url.comment guifg=#8ec07c gui=underline
+  hi! link @tag.delimiter MutedFg
   hi! link @variable Identifier
+  hi RafikDefinition guifg=#d3869b
+  hi! link @rafik.definition RafikDefinition
   hi! link diffAdded Added
   hi! link diffChanged Changed
   hi! link diffRemoved Removed
@@ -116,7 +124,8 @@ if &background ==# 'dark'
   hi MiniDiffSignChange guifg=#d3869b guibg=#282828
   hi MiniDiffSignDelete guifg=#fb4934 guibg=#282828
 else
-  hi Normal guifg=#3c3836 guibg=#f9f5d7
+  hi Normal guifg=#504945 guibg=#f9f5d7
+  hi BaseFg guifg=#504945
   hi Bold guifg=#282828 gui=bold
   hi Accent guifg=#427b58
   hi AccentBold guifg=#427b58 gui=bold
@@ -184,43 +193,50 @@ else
   hi! link WinBar StatusLine
   hi! link WinBarNC StatusLineNC
   hi! link WinSeparator MutedBg
-  hi Comment guifg=#928374
-  hi! link Constant Normal
+  hi! link Comment Accent
+  hi! link Constant BaseFg
   hi String guifg=#076678
-  hi! link Identifier Normal
+  hi! link Identifier BaseFg
   hi! link Function Identifier
   hi! link Statement Bold
-  hi! link Operator Statement
-  hi! link PreProc Bold
-  hi! link Type Normal
-  hi! link Special Normal
-  hi! link Delimiter Special
+  hi! link Operator MutedFg
+  hi! link PreProc BaseFg
+  hi! link Type BaseFg
+  hi! link Special BaseFg
+  hi! link Delimiter MutedFg
   hi Underlined guifg=#3c3836 gui=underline
   hi Error guifg=#920006 guibg=#f9f5d7 gui=bold,inverse
   hi! link Todo AccentBold
   hi Added guifg=#79740e
   hi Changed guifg=#8f3f71
   hi Removed guifg=#920006
-  hi! link DiagnosticError Accent
+  hi DiagnosticError guifg=#920006
   hi! link DiagnosticWarn DiagnosticError
   hi! link DiagnosticInfo DiagnosticError
   hi! link DiagnosticHint DiagnosticError
   hi! link DiagnosticOk DiagnosticError
-  hi DiagnosticSignError guifg=#427b58 guibg=#fbf1c7
+  hi DiagnosticSignError guifg=#920006 guibg=#fbf1c7
   hi! link DiagnosticSignWarn DiagnosticSignError
   hi! link DiagnosticSignInfo DiagnosticSignError
   hi! link DiagnosticSignHint DiagnosticSignError
   hi! link DiagnosticSignOk DiagnosticSignError
-  hi DiagnosticUnderlineError gui=underline guisp=#427b58
+  hi DiagnosticUnderlineError gui=underline guisp=#920006
   hi! link DiagnosticUnderlineWarn DiagnosticUnderlineError
   hi! link DiagnosticUnderlineInfo DiagnosticUnderlineError
   hi! link DiagnosticUnderlineHint DiagnosticUnderlineError
   hi! link DiagnosticUnderlineOk DiagnosticUnderlineError
+  hi! link DiagnosticUnnecessary MutedFg
   hi! link @comment.error @comment.todo
   hi! link @comment.note @comment.todo
   hi! link @comment.warning @comment.todo
-  hi @string.special.url.comment guifg=#928374 gui=underline
+  hi @markup.raw guifg=#076678
+  hi! link @punctuation.special @punctuation
+  hi! link @string.documentation Comment
+  hi @string.special.url.comment guifg=#427b58 gui=underline
+  hi! link @tag.delimiter MutedFg
   hi! link @variable Identifier
+  hi RafikDefinition guifg=#8f3f71
+  hi! link @rafik.definition RafikDefinition
   hi! link diffAdded Added
   hi! link diffChanged Changed
   hi! link diffRemoved Removed

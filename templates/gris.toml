@@ -1,6 +1,8 @@
 # vim: foldmethod=marker
 
-Normal = { fg = "fg1", bg = "bg0" }
+Normal = { fg = "fg2", bg = "bg0" }
+
+BaseFg = { fg = "fg2" }
 Bold = { fg = "fg0", gui = "bold" }
 Accent = { fg = "aqua" }
 AccentBold = { fg = "aqua", gui = "bold" }
@@ -75,17 +77,17 @@ WinBarNC = { link = "StatusLineNC" }
 WinSeparator = { link = "MutedBg" }
 
 # Syntax (`:help group-name`) {{{2
-Comment = { fg = "gray" }
-Constant = { link = "Normal" }
+Comment = { link = "Accent" }
+Constant = { link = "BaseFg" }
 String = { fg = "blue" }
-Identifier = { link = "Normal" }
+Identifier = { link = "BaseFg" }
 Function = { link = "Identifier" }
 Statement = { link = "Bold" }
-Operator = { link = "Statement" }
-PreProc = { link = "Bold" }
-Type = { link = "Normal" }
-Special = { link = "Normal" }
-Delimiter = { link = "Special" }
+Operator = { link = "MutedFg" }
+PreProc = { link = "BaseFg" }
+Type = { link = "BaseFg" }
+Special = { link = "BaseFg" }
+Delimiter = { link = "MutedFg" }
 Underlined = { fg = "fg1", gui = "underline" }
 Error = { fg = "red", bg = "bg0", gui = "bold,inverse" }
 Todo = { link = "AccentBold" }
@@ -94,28 +96,37 @@ Changed = { fg = "purple" }
 Removed = { fg = "red" }
 
 # Diagnostic (`:help diagnostic-highlights`) {{{2
-DiagnosticError = { link = "Accent" }
+DiagnosticError = { fg = "red" }
 DiagnosticWarn = { link = "DiagnosticError" }
 DiagnosticInfo = { link = "DiagnosticError" }
 DiagnosticHint = { link = "DiagnosticError" }
 DiagnosticOk = { link = "DiagnosticError" }
-DiagnosticSignError = { fg = "aqua", bg = "sign" }
+DiagnosticSignError = { fg = "red", bg = "sign" }
 DiagnosticSignWarn = { link = "DiagnosticSignError" }
 DiagnosticSignInfo = { link = "DiagnosticSignError" }
 DiagnosticSignHint = { link = "DiagnosticSignError" }
 DiagnosticSignOk = { link = "DiagnosticSignError" }
-DiagnosticUnderlineError = { gui = "underline", guisp = "aqua" }
+DiagnosticUnderlineError = { gui = "underline", guisp = "red" }
 DiagnosticUnderlineWarn = { link = "DiagnosticUnderlineError" }
 DiagnosticUnderlineInfo = { link = "DiagnosticUnderlineError" }
 DiagnosticUnderlineHint = { link = "DiagnosticUnderlineError" }
 DiagnosticUnderlineOk = { link = "DiagnosticUnderlineError" }
+DiagnosticUnnecessary = { link = "MutedFg" }
 
 # tree-sitter highlights (`:help treesitter-highlight-groups`) {{{2
 "@comment.error" = { link = "@comment.todo" }
 "@comment.note" = { link = "@comment.todo" }
 "@comment.warning" = { link = "@comment.todo" }
-"@string.special.url.comment" = { fg = "gray", gui = "underline" }
+"@markup.raw" = { fg = "blue" }
+"@punctuation.special" = { link = "@punctuation" }
+"@string.documentation" = { link = "Comment" }
+"@string.special.url.comment" = { fg = "aqua", gui = "underline" }
+"@tag.delimiter" = { link = "MutedFg" }
 "@variable" = { link = "Identifier" }
+
+# Custom highlights {{{2
+"RafikDefinition" = { fg = "purple" }
+"@rafik.definition" = { link = "RafikDefinition" }
 
 # Plugins {{{1
 
