@@ -147,6 +147,8 @@ DiagnosticUnderlineOk = { gui = "underline", guisp = "aqua" }
 "@type.builtin" = { link = "@type" }
 "@variable" = { link = "Identifier" }
 
+# Custom highlights {{{2
+"@error" = { link = "Error" }
 
 # Plugins {{{1
 

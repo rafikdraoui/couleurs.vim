@@ -125,8 +125,9 @@ DiagnosticUnnecessary = { link = "MutedFg" }
 "@variable" = { link = "Identifier" }
 
 # Custom highlights {{{2
-"RafikDefinition" = { fg = "purple" }
+"@error" = { link = "Error" }
 "@rafik.definition" = { link = "RafikDefinition" }
+"RafikDefinition" = { fg = "purple" }
 
 # Plugins {{{1
 

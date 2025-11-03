@@ -115,8 +115,9 @@ if &background ==# 'dark'
   hi @string.special.url.comment guifg=#8ec07c gui=underline
   hi! link @tag.delimiter MutedFg
   hi! link @variable Identifier
-  hi RafikDefinition guifg=#d3869b
+  hi! link @error Error
   hi! link @rafik.definition RafikDefinition
+  hi RafikDefinition guifg=#d3869b
   hi! link diffAdded Added
   hi! link diffChanged Changed
   hi! link diffRemoved Removed
@@ -235,8 +236,9 @@ else
   hi @string.special.url.comment guifg=#427b58 gui=underline
   hi! link @tag.delimiter MutedFg
   hi! link @variable Identifier
-  hi RafikDefinition guifg=#8f3f71
+  hi! link @error Error
   hi! link @rafik.definition RafikDefinition
+  hi RafikDefinition guifg=#8f3f71
   hi! link diffAdded Added
   hi! link diffChanged Changed
   hi! link diffRemoved Removed
