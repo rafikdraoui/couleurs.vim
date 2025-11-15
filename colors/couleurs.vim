@@ -137,6 +137,8 @@ if &background ==# 'dark'
   hi! link @type.builtin @type
   hi! link @variable Identifier
   hi! link @error Error
+  hi! link @rafik.notes.link @markup.link.url
+  hi! link @rafik.notes.tag @attribute
   hi! link diffAdded Added
   hi! link diffChanged Changed
   hi! link diffRemoved Removed
@@ -278,6 +280,8 @@ else
   hi! link @type.builtin @type
   hi! link @variable Identifier
   hi! link @error Error
+  hi! link @rafik.notes.link @markup.link.url
+  hi! link @rafik.notes.tag @attribute
   hi! link diffAdded Added
   hi! link diffChanged Changed
   hi! link diffRemoved Removed

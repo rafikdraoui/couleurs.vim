@@ -117,6 +117,8 @@ if &background ==# 'dark'
   hi! link @variable Identifier
   hi! link @error Error
   hi! link @rafik.definition RafikDefinition
+  hi! link @rafik.notes.link Accent
+  hi! link @rafik.notes.tag Accent
   hi RafikDefinition guifg=#d3869b
   hi! link diffAdded Added
   hi! link diffChanged Changed
@@ -238,6 +240,8 @@ else
   hi! link @variable Identifier
   hi! link @error Error
   hi! link @rafik.definition RafikDefinition
+  hi! link @rafik.notes.link Accent
+  hi! link @rafik.notes.tag Accent
   hi RafikDefinition guifg=#8f3f71
   hi! link diffAdded Added
   hi! link diffChanged Changed

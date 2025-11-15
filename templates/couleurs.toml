@@ -149,6 +149,8 @@ DiagnosticUnderlineOk = { gui = "underline", guisp = "aqua" }
 
 # Custom highlights {{{2
 "@error" = { link = "Error" }
+"@rafik.notes.link" = { link = "@markup.link.url" }
+"@rafik.notes.tag" = { link = "@attribute" }
 
 # Plugins {{{1
 
