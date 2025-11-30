@@ -139,6 +139,8 @@ diffChanged = { link = "Changed" }
 diffRemoved = { link = "Removed" }
 
 # mini {{{2
+MiniCursorword = { link = "IncSearch" }
 MiniDiffSignAdd = { fg = "green", bg = "sign" }
 MiniDiffSignChange = { fg = "purple", bg = "sign" }
 MiniDiffSignDelete = { fg = "red", bg = "sign" }
+MiniJump = { fg = "aqua", gui = "bold,underline" }

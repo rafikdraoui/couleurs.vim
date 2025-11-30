@@ -142,6 +142,7 @@ if &background ==# 'dark'
   hi! link diffAdded Added
   hi! link diffChanged Changed
   hi! link diffRemoved Removed
+  hi! link MiniCursorword IncSearch
   hi! link MiniDiffSignAdd GreenSign
   hi! link MiniDiffSignChange PurpleSign
   hi! link MiniDiffSignDelete RedSign
@@ -285,6 +286,7 @@ else
   hi! link diffAdded Added
   hi! link diffChanged Changed
   hi! link diffRemoved Removed
+  hi! link MiniCursorword IncSearch
   hi! link MiniDiffSignAdd GreenSign
   hi! link MiniDiffSignChange PurpleSign
   hi! link MiniDiffSignDelete RedSign
