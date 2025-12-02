@@ -114,6 +114,7 @@ DiagnosticUnderlineOk = { link = "DiagnosticUnderlineError" }
 DiagnosticUnnecessary = { link = "MutedFg" }
 
 # tree-sitter highlights (`:help treesitter-highlight-groups`) {{{2
+"@character.printf" = { link = "@string" }
 "@comment.error" = { link = "@comment.todo" }
 "@comment.note" = { link = "@comment.todo" }
 "@comment.warning" = { link = "@comment.todo" }

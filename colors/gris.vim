@@ -106,6 +106,7 @@ if &background ==# 'dark'
   hi! link DiagnosticUnderlineHint DiagnosticUnderlineError
   hi! link DiagnosticUnderlineOk DiagnosticUnderlineError
   hi! link DiagnosticUnnecessary MutedFg
+  hi! link @character.printf @string
   hi! link @comment.error @comment.todo
   hi! link @comment.note @comment.todo
   hi! link @comment.warning @comment.todo
@@ -231,6 +232,7 @@ else
   hi! link DiagnosticUnderlineHint DiagnosticUnderlineError
   hi! link DiagnosticUnderlineOk DiagnosticUnderlineError
   hi! link DiagnosticUnnecessary MutedFg
+  hi! link @character.printf @string
   hi! link @comment.error @comment.todo
   hi! link @comment.note @comment.todo
   hi! link @comment.warning @comment.todo
