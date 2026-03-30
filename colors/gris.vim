@@ -59,8 +59,8 @@ if &background ==# 'dark'
   hi SpellCap gui=undercurl guisp=#83a598
   hi SpellLocal gui=undercurl guisp=#8ec07c
   hi SpellRare gui=undercurl guisp=#d3869b
-  hi StatusLine guifg=#504945 guibg=#ebdbb2 gui=inverse
-  hi StatusLineNC guifg=#3c3836 guibg=#a89984 gui=inverse
+  hi StatusLine guifg=#ebdbb2 guibg=#504945
+  hi StatusLineNC guifg=#a89984 guibg=#3c3836
   hi! link Substitute IncSearch
   hi TabLine guifg=#7c6f64 guibg=#3c3836 gui=NONE
   hi! link TabLineFill TabLine
@@ -185,8 +185,8 @@ else
   hi SpellCap gui=undercurl guisp=#076678
   hi SpellLocal gui=undercurl guisp=#427b58
   hi SpellRare gui=undercurl guisp=#8f3f71
-  hi StatusLine guifg=#d5c4a1 guibg=#3c3836 gui=inverse
-  hi StatusLineNC guifg=#ebdbb2 guibg=#7c6f64 gui=inverse
+  hi StatusLine guifg=#3c3836 guibg=#d5c4a1
+  hi StatusLineNC guifg=#7c6f64 guibg=#ebdbb2
   hi! link Substitute IncSearch
   hi TabLine guifg=#a89984 guibg=#ebdbb2 gui=NONE
   hi! link TabLineFill TabLine

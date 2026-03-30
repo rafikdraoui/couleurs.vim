@@ -2,7 +2,6 @@
 
 Normal = { fg = "fg1", bg = "bg0" }
 
-
 # Base colors {{{1
 Fg0 = { fg = "fg0" }
 Fg1 = { fg = "fg1" }
@@ -35,7 +34,6 @@ YellowSign = { fg = "yellow", bg = "sign" }
 BlueSign = { fg = "blue", bg = "sign" }
 PurpleSign = { fg = "purple", bg = "sign" }
 AquaSign = { fg = "aqua", bg = "sign" }
-
 
 # Colorscheme {{{1
 
@@ -88,8 +86,8 @@ SpellBad = { gui = "undercurl", guisp = "red" }
 SpellCap = { gui = "undercurl", guisp = "blue" }
 SpellLocal = { gui = "undercurl", guisp = "aqua" }
 SpellRare = { gui = "undercurl", guisp = "purple" }
-StatusLine = { fg = "bg2", bg = "fg1", gui = "inverse" }
-StatusLineNC = { fg = "bg1", bg = "fg4", gui = "inverse" }
+StatusLine = { fg = "fg1", bg = "bg2" }
+StatusLineNC = { fg = "fg4", bg = "bg1" }
 Substitute = { link = "IncSearch" }
 TabLine = { fg = "bg4", bg = "bg1", gui = "NONE" }
 TabLineFill = { link = "TabLine" }
