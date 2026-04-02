@@ -116,6 +116,10 @@ if &background ==# 'dark'
   hi @string.special.url.comment guifg=#8ec07c gui=underline
   hi! link @tag.delimiter MutedFg
   hi! link @variable Identifier
+  hi! link @lsp.typemod.class.definition @rafik.definition
+  hi! link @lsp.typemod.function.definition @rafik.definition
+  hi! link @lsp.typemod.method.definition @rafik.definition
+  hi! link @lsp.typemod.string.documentation Comment
   hi! link @error Error
   hi! link @rafik.definition RafikDefinition
   hi! link @rafik.notes.link Accent
@@ -242,6 +246,10 @@ else
   hi @string.special.url.comment guifg=#427b58 gui=underline
   hi! link @tag.delimiter MutedFg
   hi! link @variable Identifier
+  hi! link @lsp.typemod.class.definition @rafik.definition
+  hi! link @lsp.typemod.function.definition @rafik.definition
+  hi! link @lsp.typemod.method.definition @rafik.definition
+  hi! link @lsp.typemod.string.documentation Comment
   hi! link @error Error
   hi! link @rafik.definition RafikDefinition
   hi! link @rafik.notes.link Accent

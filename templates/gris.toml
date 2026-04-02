@@ -124,6 +124,12 @@ DiagnosticUnnecessary = { link = "MutedFg" }
 "@tag.delimiter" = { link = "MutedFg" }
 "@variable" = { link = "Identifier" }
 
+# LSP semantic tokens highlights (`:help lsp-semantic-highlight`) {{{2
+"@lsp.typemod.class.definition" = { link = "@rafik.definition" }
+"@lsp.typemod.function.definition" = { link = "@rafik.definition" }
+"@lsp.typemod.method.definition" = { link = "@rafik.definition" }
+"@lsp.typemod.string.documentation" = { link = "Comment" }
+
 # Custom highlights {{{2
 "@error" = { link = "Error" }
 "@rafik.definition" = { link = "RafikDefinition" }
