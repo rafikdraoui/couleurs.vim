@@ -147,6 +147,8 @@ if &background ==# 'dark'
   hi! link MiniDiffSignChange PurpleSign
   hi! link MiniDiffSignDelete RedSign
   hi MiniJump guifg=#fabd2f gui=bold,underline
+  hi! link MiniPickHeader Special
+  hi! link MiniPickMatchRanges YellowBold
 else
   hi Normal guifg=#3c3836 guibg=#f9f5d7
   hi Fg0 guifg=#282828
@@ -291,4 +293,6 @@ else
   hi! link MiniDiffSignChange PurpleSign
   hi! link MiniDiffSignDelete RedSign
   hi MiniJump guifg=#b57614 gui=bold,underline
+  hi! link MiniPickHeader Special
+  hi! link MiniPickMatchRanges YellowBold
 endif

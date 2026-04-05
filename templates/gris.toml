@@ -150,3 +150,6 @@ MiniDiffSignAdd = { fg = "green", bg = "sign" }
 MiniDiffSignChange = { fg = "purple", bg = "sign" }
 MiniDiffSignDelete = { fg = "red", bg = "sign" }
 MiniJump = { fg = "aqua", gui = "bold,underline" }
+MiniPickHeader = { link = "Accent" }
+MiniPickMatchRanges = { link = "AccentBold" }
+MiniPickPrompt = { link = "Accent" }

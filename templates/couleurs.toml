@@ -163,3 +163,5 @@ MiniDiffSignAdd = { link = "GreenSign" }
 MiniDiffSignChange = { link = "PurpleSign" }
 MiniDiffSignDelete = { link = "RedSign" }
 MiniJump = { fg = "yellow", gui = "bold,underline" }
+MiniPickHeader = { link = "Special" }
+MiniPickMatchRanges = { link = "YellowBold" }

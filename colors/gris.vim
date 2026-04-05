@@ -133,6 +133,9 @@ if &background ==# 'dark'
   hi MiniDiffSignChange guifg=#d3869b guibg=#282828
   hi MiniDiffSignDelete guifg=#fb4934 guibg=#282828
   hi MiniJump guifg=#8ec07c gui=bold,underline
+  hi! link MiniPickHeader Accent
+  hi! link MiniPickMatchRanges AccentBold
+  hi! link MiniPickPrompt Accent
 else
   hi Normal guifg=#504945 guibg=#f9f5d7
   hi BaseFg guifg=#504945
@@ -263,4 +266,7 @@ else
   hi MiniDiffSignChange guifg=#8f3f71 guibg=#fbf1c7
   hi MiniDiffSignDelete guifg=#920006 guibg=#fbf1c7
   hi MiniJump guifg=#427b58 gui=bold,underline
+  hi! link MiniPickHeader Accent
+  hi! link MiniPickMatchRanges AccentBold
+  hi! link MiniPickPrompt Accent
 endif
