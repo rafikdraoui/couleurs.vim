@@ -165,3 +165,4 @@ MiniDiffSignDelete = { link = "RedSign" }
 MiniJump = { fg = "yellow", gui = "bold,underline" }
 MiniPickHeader = { link = "Special" }
 MiniPickMatchRanges = { link = "YellowBold" }
+MiniPickPrompt = { fg = "blue", bg = "bg1" }

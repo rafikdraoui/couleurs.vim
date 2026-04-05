@@ -149,6 +149,7 @@ if &background ==# 'dark'
   hi MiniJump guifg=#fabd2f gui=bold,underline
   hi! link MiniPickHeader Special
   hi! link MiniPickMatchRanges YellowBold
+  hi MiniPickPrompt guifg=#83a598 guibg=#3c3836
 else
   hi Normal guifg=#3c3836 guibg=#f9f5d7
   hi Fg0 guifg=#282828
@@ -295,4 +296,5 @@ else
   hi MiniJump guifg=#b57614 gui=bold,underline
   hi! link MiniPickHeader Special
   hi! link MiniPickMatchRanges YellowBold
+  hi MiniPickPrompt guifg=#076678 guibg=#ebdbb2
 endif

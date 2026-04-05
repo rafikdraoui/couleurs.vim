@@ -135,7 +135,7 @@ if &background ==# 'dark'
   hi MiniJump guifg=#8ec07c gui=bold,underline
   hi! link MiniPickHeader Accent
   hi! link MiniPickMatchRanges AccentBold
-  hi! link MiniPickPrompt Accent
+  hi MiniPickPrompt guifg=#8ec07c guibg=#3c3836
 else
   hi Normal guifg=#504945 guibg=#f9f5d7
   hi BaseFg guifg=#504945
@@ -268,5 +268,5 @@ else
   hi MiniJump guifg=#427b58 gui=bold,underline
   hi! link MiniPickHeader Accent
   hi! link MiniPickMatchRanges AccentBold
-  hi! link MiniPickPrompt Accent
+  hi MiniPickPrompt guifg=#427b58 guibg=#ebdbb2
 endif
